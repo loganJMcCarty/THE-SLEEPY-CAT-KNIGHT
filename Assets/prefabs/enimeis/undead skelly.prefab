@@ -2850,6 +2850,7 @@ GameObject:
   - component: {fileID: 1936620618195260338}
   - component: {fileID: 8202607731465266968}
   - component: {fileID: 6464078168534018079}
+  - component: {fileID: 7946099422896245270}
   m_Layer: 0
   m_Name: undead skelly
   m_TagString: Untagged
@@ -2865,9 +2866,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7395808269725357589}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.89, y: 2.7, z: -17.2}
-  m_LocalScale: {x: 1.249644, y: 1.249644, z: 1.249644}
+  m_LocalScale: {x: 13.444016, y: 13.444016, z: 13.444016}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1684329182031012243}
@@ -2981,6 +2982,27 @@ NavMeshAgent:
   m_BaseOffset: 2.13
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &7946099422896245270
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395808269725357589}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99999976, y: 1.7355144, z: 0.99999976}
+  m_Center: {x: 0, y: -1.2550114, z: 0}
 --- !u!1 &7700427251108123788
 GameObject:
   m_ObjectHideFlags: 0
