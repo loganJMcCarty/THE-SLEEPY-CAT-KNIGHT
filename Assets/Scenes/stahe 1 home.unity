@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 17682082}
   - component: {fileID: 17682081}
   - component: {fileID: 17682080}
+  - component: {fileID: 17682083}
   m_Layer: 0
   m_Name: Cube (98)
   m_TagString: Untagged
@@ -739,6 +740,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17682078}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &17682083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17682078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &18074677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -5043,6 +5064,7 @@ GameObject:
   - component: {fileID: 90214901}
   - component: {fileID: 90214900}
   - component: {fileID: 90214899}
+  - component: {fileID: 90214902}
   m_Layer: 0
   m_Name: Cube (78)
   m_TagString: Untagged
@@ -5142,6 +5164,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90214897}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &90214902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90214897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &90802808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -6055,7 +6097,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 6359413742741242357, guid: 89f0beab0c0b7f641b34db2fb986cdda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8382,6 +8424,7 @@ GameObject:
   - component: {fileID: 184832837}
   - component: {fileID: 184832836}
   - component: {fileID: 184832835}
+  - component: {fileID: 184832838}
   m_Layer: 0
   m_Name: Cube (87)
   m_TagString: Untagged
@@ -8481,6 +8524,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184832833}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &184832838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184832833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &185990830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -9337,18 +9400,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 440024622}
     m_Modifications:
     - target: {fileID: 3799451495416188878, guid: 56fe665ec36aba14abf8c3e35b3e7b5f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0800221
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799451495416188878, guid: 56fe665ec36aba14abf8c3e35b3e7b5f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2386
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799451495416188878, guid: 56fe665ec36aba14abf8c3e35b3e7b5f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2386
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799451495416188878, guid: 56fe665ec36aba14abf8c3e35b3e7b5f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -59.122
       objectReference: {fileID: 0}
@@ -9854,7 +9905,7 @@ Transform:
   - {fileID: 1819787432}
   - {fileID: 1125231292}
   - {fileID: 681453412}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 6.283, z: 0}
 --- !u!4 &232563009 stripped
 Transform:
@@ -9924,7 +9975,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 1229819433555994375, guid: 22c86116f5bb717419de7db6da654cfb, type: 3}
       propertyPath: m_Name
@@ -10608,7 +10659,7 @@ Transform:
   - {fileID: 1839449654}
   - {fileID: 1675549286}
   - {fileID: 302106770}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -3.958, z: 0}
 --- !u!1001 &249561097
 PrefabInstance:
@@ -11034,7 +11085,7 @@ Transform:
   - {fileID: 562079225}
   - {fileID: 1946457609}
   - {fileID: 1190524753}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 148.745, z: 0}
 --- !u!1 &286067738
 GameObject:
@@ -11629,7 +11680,7 @@ Transform:
   - {fileID: 203813082}
   - {fileID: 324888854}
   - {fileID: 1326845639}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -50.766, z: 0}
 --- !u!1 &292787492
 GameObject:
@@ -11939,6 +11990,7 @@ GameObject:
   - component: {fileID: 298252764}
   - component: {fileID: 298252763}
   - component: {fileID: 298252762}
+  - component: {fileID: 298252765}
   m_Layer: 0
   m_Name: Cube (83)
   m_TagString: Untagged
@@ -12038,6 +12090,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298252760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &298252765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298252760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &300402325
 GameObject:
   m_ObjectHideFlags: 0
@@ -12050,6 +12122,7 @@ GameObject:
   - component: {fileID: 300402329}
   - component: {fileID: 300402328}
   - component: {fileID: 300402327}
+  - component: {fileID: 300402330}
   m_Layer: 0
   m_Name: Cube (95)
   m_TagString: Untagged
@@ -12149,6 +12222,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300402325}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &300402330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300402325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &300566533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12857,7 +12950,7 @@ Transform:
   - {fileID: 1939360326}
   - {fileID: 386295881}
   - {fileID: 494522345}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315334725
 GameObject:
@@ -12900,7 +12993,7 @@ Transform:
   - {fileID: 927146454}
   - {fileID: 674118281}
   - {fileID: 1937546597}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 68.784, z: 0}
 --- !u!4 &316678995 stripped
 Transform:
@@ -13586,7 +13679,7 @@ Transform:
   - {fileID: 13175478}
   - {fileID: 1783366817}
   - {fileID: 438038227}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 184.205, z: 0}
 --- !u!4 &336276509 stripped
 Transform:
@@ -13634,7 +13727,7 @@ Transform:
   - {fileID: 497835850}
   - {fileID: 380980193}
   - {fileID: 570595203}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 176.504, z: 0}
 --- !u!4 &338770234 stripped
 Transform:
@@ -13770,6 +13863,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8424503528261755352, guid: 01731519c681e5f45bc294844493d2b4, type: 3}
   m_PrefabInstance: {fileID: 347219780}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &349694497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+  m_PrefabInstance: {fileID: 637706422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349755262
 GameObject:
   m_ObjectHideFlags: 0
@@ -13811,7 +13909,7 @@ Transform:
   - {fileID: 316678995}
   - {fileID: 28851674}
   - {fileID: 1044606230}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 227.862, z: 0}
 --- !u!4 &351304236 stripped
 Transform:
@@ -14065,18 +14163,6 @@ PrefabInstance:
     - target: {fileID: 4874496035667420136, guid: db18f21f84fbd3b4686fc36c7e2d2350, type: 3}
       propertyPath: m_Name
       value: Tree_01 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255244458751031634, guid: db18f21f84fbd3b4686fc36c7e2d2350, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0800221
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255244458751031634, guid: db18f21f84fbd3b4686fc36c7e2d2350, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2386
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255244458751031634, guid: db18f21f84fbd3b4686fc36c7e2d2350, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2386
       objectReference: {fileID: 0}
     - target: {fileID: 5255244458751031634, guid: db18f21f84fbd3b4686fc36c7e2d2350, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14443,7 +14529,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 8472064894536206224, guid: 0955aa7537163ec42a5c5afc02700b95, type: 3}
       propertyPath: m_Name
@@ -14545,7 +14631,7 @@ Transform:
   - {fileID: 156228280}
   - {fileID: 663996692}
   - {fileID: 1113756641}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -142.461, z: 0}
 --- !u!1001 &379295561
 PrefabInstance:
@@ -16866,10 +16952,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 637060965}
-  - {fileID: 114878676}
-  - {fileID: 1017541163}
-  - {fileID: 1582153967}
   - {fileID: 174406865}
   - {fileID: 1426979125}
   - {fileID: 72140974}
@@ -16880,11 +16962,7 @@ Transform:
   - {fileID: 487834171}
   - {fileID: 845953670}
   - {fileID: 1889463627}
-  - {fileID: 376604963}
   - {fileID: 430362333}
-  - {fileID: 750633398}
-  - {fileID: 594066507}
-  - {fileID: 644163526}
   - {fileID: 1980261579}
   - {fileID: 2119290329}
   - {fileID: 844596712}
@@ -16920,56 +16998,7 @@ Transform:
   - {fileID: 842386031}
   - {fileID: 587622670}
   - {fileID: 1097983015}
-  - {fileID: 1724473890}
-  - {fileID: 1611539863}
-  - {fileID: 1331017750}
-  - {fileID: 234184028}
-  - {fileID: 555018941}
-  - {fileID: 707831946}
-  - {fileID: 1867888375}
   - {fileID: 1777903292}
-  - {fileID: 571588762}
-  - {fileID: 2113234486}
-  - {fileID: 506463288}
-  - {fileID: 315334726}
-  - {fileID: 864955353}
-  - {fileID: 1601091443}
-  - {fileID: 1140373236}
-  - {fileID: 1258206741}
-  - {fileID: 349755263}
-  - {fileID: 314962384}
-  - {fileID: 1883574903}
-  - {fileID: 1775930588}
-  - {fileID: 1697726682}
-  - {fileID: 1134664930}
-  - {fileID: 285646301}
-  - {fileID: 1163521388}
-  - {fileID: 1912925716}
-  - {fileID: 1630511747}
-  - {fileID: 1008856986}
-  - {fileID: 2065386956}
-  - {fileID: 1036510712}
-  - {fileID: 1099118662}
-  - {fileID: 336973991}
-  - {fileID: 705775398}
-  - {fileID: 1993737091}
-  - {fileID: 243804995}
-  - {fileID: 2037821684}
-  - {fileID: 1322587440}
-  - {fileID: 1148808891}
-  - {fileID: 1820343049}
-  - {fileID: 333601633}
-  - {fileID: 1373702029}
-  - {fileID: 1074902480}
-  - {fileID: 378925344}
-  - {fileID: 291629725}
-  - {fileID: 2092035204}
-  - {fileID: 1327702918}
-  - {fileID: 625435056}
-  - {fileID: 831571841}
-  - {fileID: 231735003}
-  - {fileID: 1084250263}
-  - {fileID: 1336296494}
   - {fileID: 1749936949}
   - {fileID: 807041414}
   - {fileID: 1518556201}
@@ -17011,6 +17040,7 @@ Transform:
   - {fileID: 1432230640}
   - {fileID: 1620555472}
   - {fileID: 98750195}
+  - {fileID: 1614908233}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &440997508 stripped
@@ -17216,6 +17246,7 @@ GameObject:
   - component: {fileID: 456818081}
   - component: {fileID: 456818080}
   - component: {fileID: 456818079}
+  - component: {fileID: 456818082}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -17315,6 +17346,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456818077}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &456818082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456818077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &456830588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5149533179650245462, guid: 42419eff3b9a6264380b5a7b0da1b29f, type: 3}
@@ -17513,6 +17564,7 @@ GameObject:
   - component: {fileID: 470722819}
   - component: {fileID: 470722818}
   - component: {fileID: 470722817}
+  - component: {fileID: 470722820}
   m_Layer: 0
   m_Name: Cube (91)
   m_TagString: Untagged
@@ -17612,6 +17664,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470722815}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &470722820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470722815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &471671976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18762,7 +18834,7 @@ Transform:
   - {fileID: 53659602}
   - {fileID: 256296886}
   - {fileID: 1320213104}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -9.052, z: 0}
 --- !u!4 &506815881 stripped
 Transform:
@@ -19634,18 +19706,6 @@ PrefabInstance:
       value: Bush
       objectReference: {fileID: 0}
     - target: {fileID: 2931683555571525483, guid: d17329bbf3248114ca5bf66aafe7cf81, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.8574
-      objectReference: {fileID: 0}
-    - target: {fileID: 2931683555571525483, guid: d17329bbf3248114ca5bf66aafe7cf81, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.8574
-      objectReference: {fileID: 0}
-    - target: {fileID: 2931683555571525483, guid: d17329bbf3248114ca5bf66aafe7cf81, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.8574
-      objectReference: {fileID: 0}
-    - target: {fileID: 2931683555571525483, guid: d17329bbf3248114ca5bf66aafe7cf81, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.95
       objectReference: {fileID: 0}
@@ -20436,7 +20496,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 2300355430653151185, guid: 177742a9cc0c87644a9f0ff6b4ae37ec, type: 3}
       propertyPath: m_Name
@@ -20561,6 +20621,7 @@ GameObject:
   - component: {fileID: 558160507}
   - component: {fileID: 558160506}
   - component: {fileID: 558160505}
+  - component: {fileID: 558160508}
   m_Layer: 0
   m_Name: Cube (82)
   m_TagString: Untagged
@@ -20660,6 +20721,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558160503}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &558160508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558160503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &559043856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1573750732610161640, guid: 9d3a95050b299284d9f43cb431934609, type: 3}
@@ -21023,7 +21104,7 @@ Transform:
   - {fileID: 1063424485}
   - {fileID: 901309127}
   - {fileID: 718582000}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &574270368
 Mesh:
@@ -21495,68 +21576,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4479826142005525290, guid: 2402c9a1e2861db4b9f72b644de5caff, type: 3}
   m_PrefabInstance: {fileID: 1815184394}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &594066506
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
-    m_Modifications:
-    - target: {fileID: 8364133740927167483, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_Name
-      value: Grass_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.08648312
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8299999
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.964254
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
---- !u!4 &594066507 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9176242562311319873, guid: 4ae3c4ca2edaf5b42b27bf3243dbdbd0, type: 3}
-  m_PrefabInstance: {fileID: 594066506}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &594820365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -21692,18 +21711,6 @@ PrefabInstance:
     - target: {fileID: 1260433983695324353, guid: e5e5bbc21217efd4d816ec8f4ef93b26, type: 3}
       propertyPath: m_Name
       value: Tree_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888739610386620027, guid: e5e5bbc21217efd4d816ec8f4ef93b26, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0800221
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888739610386620027, guid: e5e5bbc21217efd4d816ec8f4ef93b26, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2386
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888739610386620027, guid: e5e5bbc21217efd4d816ec8f4ef93b26, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2386
       objectReference: {fileID: 0}
     - target: {fileID: 1888739610386620027, guid: e5e5bbc21217efd4d816ec8f4ef93b26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22026,6 +22033,7 @@ GameObject:
   - component: {fileID: 618667730}
   - component: {fileID: 618667729}
   - component: {fileID: 618667728}
+  - component: {fileID: 618667731}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -22125,6 +22133,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618667726}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &618667731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618667726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &621965672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22692,7 +22720,7 @@ Transform:
   - {fileID: 1835026148}
   - {fileID: 534296412}
   - {fileID: 1566129768}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -13.583, z: 0}
 --- !u!1001 &627295243
 PrefabInstance:
@@ -22825,6 +22853,7 @@ GameObject:
   - component: {fileID: 630123710}
   - component: {fileID: 630123709}
   - component: {fileID: 630123708}
+  - component: {fileID: 630123711}
   m_Layer: 0
   m_Name: Cube (76)
   m_TagString: Untagged
@@ -22924,6 +22953,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630123706}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &630123711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630123706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &630666554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23059,7 +23108,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 6359413742741242357, guid: 89f0beab0c0b7f641b34db2fb986cdda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23179,10 +23228,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1286023358}
   m_SourcePrefab: {fileID: 100100000, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
 --- !u!1001 &640620022
 PrefabInstance:
@@ -23302,68 +23358,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9007001109519019036, guid: db9ed76fdc1720d4891673de8def5fd5, type: 3}
   m_PrefabInstance: {fileID: 642944872}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &644163525
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
-    m_Modifications:
-    - target: {fileID: 8364133740927167483, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_Name
-      value: Grass_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.3646655
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.83000183
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.85257
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
---- !u!4 &644163526 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9176242562311319873, guid: 22d4c37aab9130944a76d41c6e7646b1, type: 3}
-  m_PrefabInstance: {fileID: 644163525}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &644635336
 GameObject:
@@ -25070,7 +25064,7 @@ Transform:
   - {fileID: 1532718446}
   - {fileID: 1320620330}
   - {fileID: 1731739047}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 176.504, z: 0}
 --- !u!4 &707056263 stripped
 Transform:
@@ -25083,7 +25077,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 2300355430653151185, guid: 177742a9cc0c87644a9f0ff6b4ae37ec, type: 3}
       propertyPath: m_Name
@@ -25151,6 +25145,7 @@ GameObject:
   - component: {fileID: 708477796}
   - component: {fileID: 708477795}
   - component: {fileID: 708477794}
+  - component: {fileID: 708477797}
   m_Layer: 0
   m_Name: Cube (88)
   m_TagString: Untagged
@@ -25250,6 +25245,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708477792}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &708477797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708477792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &708943879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26713,68 +26728,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
---- !u!1001 &750633397
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
-    m_Modifications:
-    - target: {fileID: 8364133740927167483, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_Name
-      value: Grass_00
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.7942407
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.83000183
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.0892315
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
---- !u!4 &750633398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9176242562311319873, guid: 0b5da8e3469f6c64d9013fd79ebe72e9, type: 3}
-  m_PrefabInstance: {fileID: 750633397}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &751821804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -27021,7 +26974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.719
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27062,15 +27015,15 @@ PrefabInstance:
     - target: {fileID: 4885301371922852569, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0734c167402481c4ea38e7074a1e2875, type: 2}
+      objectReference: {fileID: 2100000, guid: 3afa75f48eff8bf478f1ac1bc3f234f6, type: 2}
     - target: {fileID: 4885301371922852569, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0734c167402481c4ea38e7074a1e2875, type: 2}
+      objectReference: {fileID: 2100000, guid: 3afa75f48eff8bf478f1ac1bc3f234f6, type: 2}
     - target: {fileID: 4885301371922852569, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0734c167402481c4ea38e7074a1e2875, type: 2}
+      objectReference: {fileID: 2100000, guid: 3afa75f48eff8bf478f1ac1bc3f234f6, type: 2}
     - target: {fileID: 5866666021909216657, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_Controller
       value: 
@@ -27136,6 +27089,7 @@ GameObject:
   - component: {fileID: 766145476}
   - component: {fileID: 766145475}
   - component: {fileID: 766145474}
+  - component: {fileID: 766145477}
   m_Layer: 0
   m_Name: Cube (99)
   m_TagString: Untagged
@@ -27235,6 +27189,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766145472}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &766145477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766145472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &766555710
 GameObject:
   m_ObjectHideFlags: 0
@@ -28002,6 +27976,7 @@ GameObject:
   - component: {fileID: 787576511}
   - component: {fileID: 787576510}
   - component: {fileID: 787576509}
+  - component: {fileID: 787576512}
   m_Layer: 0
   m_Name: Cube (85)
   m_TagString: Untagged
@@ -28101,6 +28076,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787576507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &787576512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787576507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &788413239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -28795,18 +28790,6 @@ PrefabInstance:
       value: BigTree
       objectReference: {fileID: 0}
     - target: {fileID: 5741875878152988260, guid: 6a698dfde7cc29b4da4d6415f64102a8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.217868
-      objectReference: {fileID: 0}
-    - target: {fileID: 5741875878152988260, guid: 6a698dfde7cc29b4da4d6415f64102a8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.217868
-      objectReference: {fileID: 0}
-    - target: {fileID: 5741875878152988260, guid: 6a698dfde7cc29b4da4d6415f64102a8, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.217868
-      objectReference: {fileID: 0}
-    - target: {fileID: 5741875878152988260, guid: 6a698dfde7cc29b4da4d6415f64102a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.3
       objectReference: {fileID: 0}
@@ -29209,7 +29192,7 @@ Transform:
   - {fileID: 149138313}
   - {fileID: 94268176}
   - {fileID: 1005654916}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 6.283, z: 0}
 --- !u!1001 &832407100
 PrefabInstance:
@@ -30421,7 +30404,7 @@ Transform:
   - {fileID: 1424678494}
   - {fileID: 803447897}
   - {fileID: 1083322104}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 128.879, z: 0}
 --- !u!4 &865438920 stripped
 Transform:
@@ -32186,8 +32169,9 @@ GameObject:
   - component: {fileID: 934906182}
   - component: {fileID: 934906181}
   - component: {fileID: 934906180}
+  - component: {fileID: 934906183}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: boat test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32285,6 +32269,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934906178}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &934906183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934906178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &936579910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -32701,6 +32705,7 @@ GameObject:
   - component: {fileID: 959836473}
   - component: {fileID: 959836472}
   - component: {fileID: 959836471}
+  - component: {fileID: 959836474}
   m_Layer: 0
   m_Name: foundation (1)
   m_TagString: Untagged
@@ -32800,6 +32805,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959836469}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &959836474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959836469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &963580734
 GameObject:
   m_ObjectHideFlags: 0
@@ -34501,7 +34526,7 @@ Transform:
   - {fileID: 1838441641}
   - {fileID: 714601542}
   - {fileID: 1894167989}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 227.862, z: 0}
 --- !u!1 &1009001400
 GameObject:
@@ -34515,6 +34540,7 @@ GameObject:
   - component: {fileID: 1009001404}
   - component: {fileID: 1009001403}
   - component: {fileID: 1009001402}
+  - component: {fileID: 1009001405}
   m_Layer: 0
   m_Name: Cube (93)
   m_TagString: Untagged
@@ -34614,6 +34640,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009001400}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1009001405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009001400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1009728435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -35108,7 +35154,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 8472064894536206224, guid: 0955aa7537163ec42a5c5afc02700b95, type: 3}
       propertyPath: m_Name
@@ -35502,7 +35548,7 @@ Transform:
   - {fileID: 192830662}
   - {fileID: 1296011995}
   - {fileID: 978250097}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 176.504, z: 0}
 --- !u!4 &1036640380 stripped
 Transform:
@@ -39106,7 +39152,7 @@ Transform:
   - {fileID: 511516979}
   - {fileID: 394406867}
   - {fileID: 1160630523}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 347.527, z: 0}
 --- !u!1001 &1075817581
 PrefabInstance:
@@ -39283,7 +39329,7 @@ Transform:
   - {fileID: 1898516948}
   - {fileID: 58353193}
   - {fileID: 875087482}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -102.182, z: 0}
 --- !u!4 &1084971642 stripped
 Transform:
@@ -39962,7 +40008,7 @@ Transform:
   - {fileID: 1499727795}
   - {fileID: 1957230909}
   - {fileID: 955411949}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 176.504, z: 0}
 --- !u!4 &1099256616 stripped
 Transform:
@@ -41084,7 +41130,7 @@ Transform:
   - {fileID: 456830588}
   - {fileID: 1010905066}
   - {fileID: 987091536}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 128.879, z: 0}
 --- !u!1001 &1136298149
 PrefabInstance:
@@ -41189,7 +41235,7 @@ Transform:
   - {fileID: 1654301225}
   - {fileID: 871117156}
   - {fileID: 452598000}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 148.745, z: 0}
 --- !u!4 &1140401457 stripped
 Transform:
@@ -41659,7 +41705,7 @@ Transform:
   - {fileID: 1080142471}
   - {fileID: 151324291}
   - {fileID: 874482876}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 233.363, z: 0}
 --- !u!1 &1151809895
 GameObject:
@@ -42026,6 +42072,7 @@ GameObject:
   - component: {fileID: 1160684440}
   - component: {fileID: 1160684439}
   - component: {fileID: 1160684438}
+  - component: {fileID: 1160684441}
   m_Layer: 0
   m_Name: Cube (97)
   m_TagString: Untagged
@@ -42125,6 +42172,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160684436}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1160684441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160684436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1162213439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42280,7 +42347,7 @@ Transform:
   - {fileID: 1770265224}
   - {fileID: 1175281241}
   - {fileID: 1543922759}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 148.745, z: 0}
 --- !u!1001 &1165782526
 PrefabInstance:
@@ -42805,6 +42872,7 @@ GameObject:
   - component: {fileID: 1190811746}
   - component: {fileID: 1190811745}
   - component: {fileID: 1190811744}
+  - component: {fileID: 1190811747}
   m_Layer: 0
   m_Name: Cube (75)
   m_TagString: Untagged
@@ -42904,6 +42972,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190811742}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1190811747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190811742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1195665016
 GameObject:
   m_ObjectHideFlags: 0
@@ -45822,15 +45910,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20.528067
+      value: 21.150068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalScale.z
-      value: -15.847925
+      value: -16.10071
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1396.2429
+      value: -1396.2219
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalPosition.y
@@ -45838,7 +45926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1122.3864
+      value: 1122.3871
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45876,10 +45964,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1765072765}
   m_SourcePrefab: {fileID: 100100000, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
 --- !u!1001 &1237608759
 PrefabInstance:
@@ -46428,6 +46523,7 @@ GameObject:
   - component: {fileID: 1252092482}
   - component: {fileID: 1252092481}
   - component: {fileID: 1252092484}
+  - component: {fileID: 1252092485}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -46548,6 +46644,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2238751, y: 20.356438, z: 0.0030532177}
   m_Center: {x: -0.38806444, y: 5.016875, z: -0.4984735}
+--- !u!114 &1252092485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252092479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1255899692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46703,7 +46819,7 @@ Transform:
   - {fileID: 1036658684}
   - {fileID: 1434381147}
   - {fileID: 951531217}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 40.28, z: 0}
 --- !u!4 &1259426608 stripped
 Transform:
@@ -46846,6 +46962,7 @@ GameObject:
   - component: {fileID: 1265844084}
   - component: {fileID: 1265844083}
   - component: {fileID: 1265844082}
+  - component: {fileID: 1265844085}
   m_Layer: 0
   m_Name: Cube (89)
   m_TagString: Untagged
@@ -46945,6 +47062,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265844080}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1265844085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265844080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1268319757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47443,6 +47580,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
   m_PrefabInstance: {fileID: 637706422}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286023358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349694497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1286903419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 208420154809942538, guid: 2a75e0892e1be5b4096b6784fad4c2cb, type: 3}
@@ -48361,7 +48518,7 @@ Transform:
   - {fileID: 1081067374}
   - {fileID: 2087110083}
   - {fileID: 1439520868}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 189.81, z: 0}
 --- !u!4 &1322828653 stripped
 Transform:
@@ -48476,7 +48633,7 @@ Transform:
   - {fileID: 1688824350}
   - {fileID: 1557981583}
   - {fileID: 8876872}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -73.678, z: 0}
 --- !u!4 &1327896208 stripped
 Transform:
@@ -48489,7 +48646,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 2300355430653151185, guid: 177742a9cc0c87644a9f0ff6b4ae37ec, type: 3}
       propertyPath: m_Name
@@ -48876,7 +49033,7 @@ Transform:
   - {fileID: 2121115131}
   - {fileID: 140333248}
   - {fileID: 1631691026}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 85.401, z: 0}
 --- !u!1001 &1336741225
 PrefabInstance:
@@ -49493,6 +49650,7 @@ GameObject:
   - component: {fileID: 1358070437}
   - component: {fileID: 1358070436}
   - component: {fileID: 1358070435}
+  - component: {fileID: 1358070438}
   m_Layer: 0
   m_Name: Cube (94)
   m_TagString: Untagged
@@ -49592,6 +49750,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358070433}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1358070438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358070433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1358107325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50215,7 +50393,7 @@ Transform:
   - {fileID: 1381655051}
   - {fileID: 758423838}
   - {fileID: 1268554891}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 184.205, z: 0}
 --- !u!1001 &1374335023
 PrefabInstance:
@@ -50978,6 +51156,7 @@ GameObject:
   - component: {fileID: 1386618323}
   - component: {fileID: 1386618322}
   - component: {fileID: 1386618321}
+  - component: {fileID: 1386618324}
   m_Layer: 0
   m_Name: Cube (74)
   m_TagString: Untagged
@@ -51077,6 +51256,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386618319}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1386618324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386618319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1387394842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51270,6 +51469,7 @@ GameObject:
   - component: {fileID: 1396774511}
   - component: {fileID: 1396774510}
   - component: {fileID: 1396774509}
+  - component: {fileID: 1396774512}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -51369,6 +51569,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396774507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1396774512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396774507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1397795017
 GameObject:
   m_ObjectHideFlags: 0
@@ -52785,6 +53005,7 @@ GameObject:
   - component: {fileID: 1426715983}
   - component: {fileID: 1426715982}
   - component: {fileID: 1426715981}
+  - component: {fileID: 1426715984}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -52884,6 +53105,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426715979}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1426715984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426715979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1426979124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54242,6 +54483,7 @@ GameObject:
   - component: {fileID: 1478414944}
   - component: {fileID: 1478414943}
   - component: {fileID: 1478414942}
+  - component: {fileID: 1478414945}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Untagged
@@ -54341,6 +54583,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478414940}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1478414945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478414940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1478742983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -55560,6 +55822,7 @@ GameObject:
   - component: {fileID: 1518225498}
   - component: {fileID: 1518225497}
   - component: {fileID: 1518225496}
+  - component: {fileID: 1518225499}
   m_Layer: 0
   m_Name: Cube (40)
   m_TagString: Untagged
@@ -55659,6 +55922,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518225494}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1518225499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518225494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1518556201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2931683555571525483, guid: d17329bbf3248114ca5bf66aafe7cf81, type: 3}
@@ -58133,7 +58416,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 1229819433555994375, guid: 22c86116f5bb717419de7db6da654cfb, type: 3}
       propertyPath: m_Name
@@ -58566,6 +58849,7 @@ GameObject:
   - component: {fileID: 1596461980}
   - component: {fileID: 1596461979}
   - component: {fileID: 1596461978}
+  - component: {fileID: 1596461981}
   m_Layer: 0
   m_Name: Cube (41)
   m_TagString: Untagged
@@ -58665,6 +58949,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596461976}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1596461981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596461976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1597784239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -58825,7 +59129,7 @@ Transform:
   - {fileID: 1066876139}
   - {fileID: 559043856}
   - {fileID: 1985039756}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 148.745, z: 0}
 --- !u!1 &1604047979
 GameObject:
@@ -58839,6 +59143,7 @@ GameObject:
   - component: {fileID: 1604047983}
   - component: {fileID: 1604047982}
   - component: {fileID: 1604047981}
+  - component: {fileID: 1604047984}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -58938,6 +59243,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604047979}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1604047984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604047979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1606673564
 GameObject:
   m_ObjectHideFlags: 0
@@ -58950,6 +59275,7 @@ GameObject:
   - component: {fileID: 1606673568}
   - component: {fileID: 1606673567}
   - component: {fileID: 1606673566}
+  - component: {fileID: 1606673569}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -59049,6 +59375,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606673564}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1606673569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606673564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1610947094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5149533179650245462, guid: 42419eff3b9a6264380b5a7b0da1b29f, type: 3}
@@ -59060,7 +59406,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 2300355430653151185, guid: 177742a9cc0c87644a9f0ff6b4ae37ec, type: 3}
       propertyPath: m_Name
@@ -59173,6 +59519,91 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89f0beab0c0b7f641b34db2fb986cdda, type: 3}
+--- !u!1 &1614908232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614908233}
+  m_Layer: 0
+  m_Name: grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614908233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614908232}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 571588762}
+  - {fileID: 2113234486}
+  - {fileID: 506463288}
+  - {fileID: 315334726}
+  - {fileID: 864955353}
+  - {fileID: 1601091443}
+  - {fileID: 1140373236}
+  - {fileID: 1258206741}
+  - {fileID: 349755263}
+  - {fileID: 314962384}
+  - {fileID: 1883574903}
+  - {fileID: 1775930588}
+  - {fileID: 1697726682}
+  - {fileID: 1134664930}
+  - {fileID: 285646301}
+  - {fileID: 1163521388}
+  - {fileID: 1912925716}
+  - {fileID: 1630511747}
+  - {fileID: 1008856986}
+  - {fileID: 2065386956}
+  - {fileID: 1036510712}
+  - {fileID: 1099118662}
+  - {fileID: 336973991}
+  - {fileID: 705775398}
+  - {fileID: 1993737091}
+  - {fileID: 243804995}
+  - {fileID: 2037821684}
+  - {fileID: 1322587440}
+  - {fileID: 1148808891}
+  - {fileID: 1820343049}
+  - {fileID: 333601633}
+  - {fileID: 1373702029}
+  - {fileID: 1074902480}
+  - {fileID: 378925344}
+  - {fileID: 291629725}
+  - {fileID: 2092035204}
+  - {fileID: 1327702918}
+  - {fileID: 625435056}
+  - {fileID: 831571841}
+  - {fileID: 231735003}
+  - {fileID: 1084250263}
+  - {fileID: 1336296494}
+  - {fileID: 1724473890}
+  - {fileID: 1611539863}
+  - {fileID: 1331017750}
+  - {fileID: 234184028}
+  - {fileID: 555018941}
+  - {fileID: 707831946}
+  - {fileID: 1867888375}
+  - {fileID: 637060965}
+  - {fileID: 114878676}
+  - {fileID: 1017541163}
+  - {fileID: 1582153967}
+  - {fileID: 376604963}
+  m_Father: {fileID: 440024622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1615758822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60996,6 +61427,7 @@ GameObject:
   - component: {fileID: 1621299038}
   - component: {fileID: 1621299037}
   - component: {fileID: 1621299036}
+  - component: {fileID: 1621299039}
   m_Layer: 0
   m_Name: Cube (68)
   m_TagString: Untagged
@@ -61095,6 +61527,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621299034}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1621299039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621299034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1622233525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61596,7 +62048,7 @@ Transform:
   - {fileID: 1669496352}
   - {fileID: 635741326}
   - {fileID: 273916234}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 227.862, z: 0}
 --- !u!4 &1631691026 stripped
 Transform:
@@ -62688,6 +63140,8 @@ GameObject:
   - component: {fileID: 1648681736}
   - component: {fileID: 1648681735}
   - component: {fileID: 1648681734}
+  - component: {fileID: 1648681738}
+  - component: {fileID: 1648681737}
   m_Layer: 0
   m_Name: Cube (90)
   m_TagString: Untagged
@@ -62787,6 +63241,46 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648681732}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1648681737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648681732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &1648681738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648681732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1651497349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -63835,6 +64329,7 @@ GameObject:
   - component: {fileID: 1675957782}
   - component: {fileID: 1675957781}
   - component: {fileID: 1675957780}
+  - component: {fileID: 1675957783}
   m_Layer: 0
   m_Name: Cube (77)
   m_TagString: Untagged
@@ -63934,6 +64429,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675957778}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1675957783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675957778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1677707698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64633,7 +65148,7 @@ Transform:
   - {fileID: 217953241}
   - {fileID: 512850406}
   - {fileID: 128912619}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 68.784, z: 0}
 --- !u!1 &1697877743
 GameObject:
@@ -66052,7 +66567,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 8472064894536206224, guid: 0955aa7537163ec42a5c5afc02700b95, type: 3}
       propertyPath: m_Name
@@ -66588,18 +67103,6 @@ PrefabInstance:
       value: Rock_02_Mesh
       objectReference: {fileID: 0}
     - target: {fileID: 1883824918621924915, guid: bea23b00634eade4cb258e9427a12ace, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2021
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883824918621924915, guid: bea23b00634eade4cb258e9427a12ace, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.2021
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883824918621924915, guid: bea23b00634eade4cb258e9427a12ace, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2021
-      objectReference: {fileID: 0}
-    - target: {fileID: 1883824918621924915, guid: bea23b00634eade4cb258e9427a12ace, type: 3}
       propertyPath: m_LocalPosition.x
       value: 168.41
       objectReference: {fileID: 0}
@@ -66733,6 +67236,7 @@ GameObject:
   - component: {fileID: 1740060370}
   - component: {fileID: 1740060369}
   - component: {fileID: 1740060368}
+  - component: {fileID: 1740060371}
   m_Layer: 0
   m_Name: Cube (80)
   m_TagString: Untagged
@@ -66832,6 +67336,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740060366}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1740060371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740060366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1740568943
 GameObject:
   m_ObjectHideFlags: 0
@@ -67849,6 +68373,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d3a95050b299284d9f43cb431934609, type: 3}
+--- !u!1 &1765072764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2f508ad3edbdaa4da95777f65648275, type: 3}
+  m_PrefabInstance: {fileID: 1233730787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1765072765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765072764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!43 &1765391722
 Mesh:
   m_ObjectHideFlags: 0
@@ -68633,7 +69182,7 @@ Transform:
   - {fileID: 881530219}
   - {fileID: 35823015}
   - {fileID: 1083547272}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -9.052, z: 0}
 --- !u!1 &1776489402
 GameObject:
@@ -71829,7 +72378,7 @@ Transform:
   - {fileID: 1688496735}
   - {fileID: 239544345}
   - {fileID: 1015282685}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 95.808, z: 0}
 --- !u!1001 &1822390325
 PrefabInstance:
@@ -73709,7 +74258,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 440024622}
+    m_TransformParent: {fileID: 1614908233}
     m_Modifications:
     - target: {fileID: 6359413742741242357, guid: 89f0beab0c0b7f641b34db2fb986cdda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74532,7 +75081,7 @@ Transform:
   - {fileID: 2113510843}
   - {fileID: 1349789019}
   - {fileID: 2062952963}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 91.696, z: 0}
 --- !u!4 &1884255641 stripped
 Transform:
@@ -74732,6 +75281,7 @@ GameObject:
   - component: {fileID: 1889673546}
   - component: {fileID: 1889673545}
   - component: {fileID: 1889673544}
+  - component: {fileID: 1889673547}
   m_Layer: 0
   m_Name: Cube (86)
   m_TagString: Untagged
@@ -74831,6 +75381,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889673542}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1889673547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889673542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1890434709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75271,6 +75841,7 @@ GameObject:
   - component: {fileID: 1902203150}
   - component: {fileID: 1902203149}
   - component: {fileID: 1902203148}
+  - component: {fileID: 1902203151}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -75370,6 +75941,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902203146}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1902203151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902203146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1902676874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76114,7 +76705,7 @@ Transform:
   - {fileID: 1045744748}
   - {fileID: 506815881}
   - {fileID: 27546421}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 40.28, z: 0}
 --- !u!4 &1914019230 stripped
 Transform:
@@ -79322,7 +79913,7 @@ Transform:
   - {fileID: 1891588928}
   - {fileID: 964163900}
   - {fileID: 369712450}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 176.504, z: 0}
 --- !u!4 &1993779954 stripped
 Transform:
@@ -80448,6 +81039,7 @@ GameObject:
   - component: {fileID: 2033325715}
   - component: {fileID: 2033325714}
   - component: {fileID: 2033325713}
+  - component: {fileID: 2033325717}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -80568,6 +81160,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033325711}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2033325717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033325711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2033556621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -80676,7 +81288,7 @@ Transform:
   - {fileID: 1610947094}
   - {fileID: 1965473340}
   - {fileID: 1795487030}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 189.81, z: 0}
 --- !u!1001 &2037834608
 PrefabInstance:
@@ -82468,7 +83080,7 @@ Transform:
   - {fileID: 38084319}
   - {fileID: 1176518526}
   - {fileID: 1144972972}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 227.862, z: 0}
 --- !u!4 &2066387307 stripped
 Transform:
@@ -83735,7 +84347,7 @@ Transform:
   - {fileID: 1308686408}
   - {fileID: 1368071766}
   - {fileID: 1823895254}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: -151.513, z: 0}
 --- !u!1 &2095889801
 GameObject:
@@ -84473,7 +85085,7 @@ Transform:
   - {fileID: 1832687600}
   - {fileID: 1687698592}
   - {fileID: 1625634135}
-  m_Father: {fileID: 440024622}
+  m_Father: {fileID: 1614908233}
   m_LocalEulerAnglesHint: {x: 0, y: 91.696, z: 0}
 --- !u!1 &2113391261
 GameObject:
@@ -85118,6 +85730,7 @@ GameObject:
   - component: {fileID: 2127602086}
   - component: {fileID: 2127602085}
   - component: {fileID: 2127602084}
+  - component: {fileID: 2127602087}
   m_Layer: 0
   m_Name: Cube (84)
   m_TagString: Untagged
@@ -85217,6 +85830,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127602082}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2127602087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127602082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2129325342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
@@ -85301,6 +85934,7 @@ GameObject:
   - component: {fileID: 2136953560}
   - component: {fileID: 2136953559}
   - component: {fileID: 2136953558}
+  - component: {fileID: 2136953561}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -85400,6 +86034,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136953556}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2136953561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136953556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2143095296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 51024720573290424, guid: 65291c8a18f74be4e98cb45bfd1e1fc9, type: 3}
