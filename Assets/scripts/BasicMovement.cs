@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class basicmovement : MonoBehaviour
+public class BasicMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float speed = 5.0f;
