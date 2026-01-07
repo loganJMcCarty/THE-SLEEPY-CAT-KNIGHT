@@ -4990,7 +4990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292c8164256cea04e9edbb66178f936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fire
-  speed: 1
+  speed: 2
 --- !u!1 &7397669463241322385
 GameObject:
   m_ObjectHideFlags: 0

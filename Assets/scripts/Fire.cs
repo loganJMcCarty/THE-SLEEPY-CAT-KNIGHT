@@ -14,7 +14,7 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate((player.position - transform.position) * speed * Time.deltaTime);
+        transform.Translate((transform.position - player.position) * speed * Time.deltaTime);
 
     }
 
