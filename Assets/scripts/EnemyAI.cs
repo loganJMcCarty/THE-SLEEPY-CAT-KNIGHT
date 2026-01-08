@@ -40,4 +40,11 @@ public class EnemyAI : MonoBehaviour
             isPlayerInRange = false;
         }
     }
+
+    private void OnDrawGizmos()
+        // makes the radies of the colider of the enimies more clear
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position, 10f);
+    }
 }
