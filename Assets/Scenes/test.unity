@@ -360,6 +360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 922940115}
     m_Modifications:
+    - target: {fileID: 2805948605051947850, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.991
+      objectReference: {fileID: 0}
     - target: {fileID: 7395808269725357589, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
       propertyPath: m_Name
       value: undead skelly mage 1
@@ -479,7 +483,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e91a871226f579f49974eef224252226, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
