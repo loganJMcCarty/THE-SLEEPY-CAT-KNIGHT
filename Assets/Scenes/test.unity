@@ -730,6 +730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   target: {fileID: 0}
+  patrolPoint: {fileID: 0}
+  enemyState: 0
 --- !u!195 &921875325
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2036,6 +2038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 922940115}
     m_Modifications:
+    - target: {fileID: 778017179597763069, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.082
+      objectReference: {fileID: 0}
     - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.4938004
