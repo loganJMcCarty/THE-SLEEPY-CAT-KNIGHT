@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,16 +14,16 @@ public class EnemyAI : MonoBehaviour
     private Animator anim;
     private float distanceToTarget;
     Coroutine idleToPatrol;
-   
+
 
 
     private void Start()
     {
         ai = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        enemyState = GetComponent<EnemyState>();
+        enemyState = EnemyState.Idle;
         distanceToTarget = Mathf.Abs(Vector3.Distance(target.transform.position, transform.position));
-       
+
 
     }
     IEnumerator SwitchToPatrol()
@@ -33,7 +32,7 @@ public class EnemyAI : MonoBehaviour
         enemyState = EnemyState.Potrol;
         idleToPatrol = null;
     }
-    
+
     private void SwitchState(int newstate)
     {
         if (anim.GetInteger("State") != newstate)
@@ -45,17 +44,65 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
 
-       // if (isPlayerInRange){ ai.SetDestination(target.transform.position); } put code in case block
-        
-           
-       
-        
         distanceToTarget = Mathf.Abs(Vector3.Distance(target.transform.position, transform.position));
-        switch (enemyState) 
-        { 
+        switch (enemyState)
+        {
             case EnemyState.Idle:
-                switchState(0);
+                SwitchState(0);
 
+                ai.SetDestination(transform.position);
+
+                if (idleToPatrol == null)
+                {
+                    idleToPatrol = StartCoroutine(SwitchToPatrol());
+                }
+                break;
+
+            case EnemyState.Potrol:
+                float distanceToPatrolPoint = Mathf.Abs(Vector3.Distance(patrolPoint.position, transform.position));
+                if (distanceToPatrolPoint > 3)
+                {
+                    SwitchState(1);
+                    ai.SetDestination(patrolPoint.position);
+                }
+                else
+                {
+                    SwitchState(0);
+                }
+
+                if (distanceToTarget <= 10)
+                {
+
+                    enemyState = EnemyState.Chase;
+                }
+
+                break;
+
+            case EnemyState.Chase:
+
+
+                SwitchState(2);
+                ai.SetDestination(target.transform.position);
+
+                if (distanceToTarget < 6)
+                {
+                    enemyState = EnemyState.Attack;
+                }
+
+                else if (distanceToTarget >=15)
+                {
+                    enemyState = EnemyState.Idle;
+                }
+                    break;
+
+            case EnemyState.Attack:
+                SwitchState(3);
+
+                if (distanceToTarget > 15)
+                {
+                    enemyState = EnemyState.Idle;
+                }
+                break;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -76,12 +123,12 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void OnDrawGizmos()
-        // makes the radies of the colider of the enimies more clear
+    // makes the radies of the colider of the enimies more clear
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(transform.position, 10f);
     }
 
-   
-    
+
+
 }
