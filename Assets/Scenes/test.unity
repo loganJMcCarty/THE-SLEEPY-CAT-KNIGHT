@@ -321,12 +321,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261315269}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.216, y: 0, z: 3.08}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.73135376, z: -0, w: 0.6819983}
+  m_LocalPosition: {x: -66.52, y: 2.973, z: 21.18}
+  m_LocalScale: {x: 1.3736515, y: 1.3736515, z: 1.3736515}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 774554077}
+  m_Father: {fileID: 922940115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &263454568
 PrefabInstance:
@@ -946,6 +946,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -64.629
       objectReference: {fileID: 0}
+    - target: {fileID: 6464078168534018079, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
+      propertyPath: m_Speed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464078168534018079, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
+      propertyPath: m_Acceleration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464078168534018079, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6797122039752971029, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.3433068
@@ -1037,10 +1049,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8075120945240609072, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7478990788155511861, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 261315270}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a12afc8c7ca6d30429c8cec9e6406433, type: 3}
 --- !u!1 &740008190
@@ -1463,6 +1472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 921875318}
+  - {fileID: 261315270}
   - {fileID: 758690576}
   - {fileID: 681087264}
   - {fileID: 774554077}
