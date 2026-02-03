@@ -519,6 +519,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &417116842
 MeshFilter:
@@ -554,14 +555,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618541770}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -1140,6 +1141,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &740008193
 MeshFilter:
@@ -1375,6 +1377,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &921875323
 MeshFilter:
@@ -1985,6 +1988,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1628657907
 MeshFilter:
@@ -2351,38 +2355,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 922940115}
     m_Modifications:
-    - target: {fileID: 778017179597763069, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.082
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.4938004
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.86716914
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.045516577
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.045903422
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -120.616
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 3.9019928
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854696244928403065, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.7839966
-      objectReference: {fileID: 0}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly
