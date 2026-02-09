@@ -336,13 +336,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 585690637665057548, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
+      propertyPath: canPush
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2013902069754290424, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 238154648}
     - target: {fileID: 2013902069754290424, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1025
+      value: 1037
       objectReference: {fileID: 0}
     - target: {fileID: 2337579596224603613, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Name
@@ -410,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 1429026954}
     - target: {fileID: 8320528224676321707, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1025
+      value: 1037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2035,7 +2039,7 @@ PrefabInstance:
       objectReference: {fileID: 1717521835}
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1013
+      value: 1019
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh
@@ -2043,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 667658682}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1013
+      value: 1019
       objectReference: {fileID: 0}
     - target: {fileID: 6563668583525996329, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh

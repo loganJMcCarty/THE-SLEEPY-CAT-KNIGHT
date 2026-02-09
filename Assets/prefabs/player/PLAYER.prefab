@@ -246,7 +246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1019
+      value: 1031
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh
@@ -254,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1019
+      value: 1031
       objectReference: {fileID: 0}
     - target: {fileID: 6563668583525996329, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh
@@ -413,6 +413,14 @@ PrefabInstance:
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: GroundLayers.m_Bits
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918491, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_Radius
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918491, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_Center.x
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5930158855145388821, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_IsActive
