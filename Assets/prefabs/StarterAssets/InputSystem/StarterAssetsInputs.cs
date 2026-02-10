@@ -1,6 +1,7 @@
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 #endif
 
 namespace StarterAssets
@@ -13,6 +14,7 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 		public bool pause;
+		public bool attack;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -27,6 +29,9 @@ namespace StarterAssets
         }
 
 #if ENABLE_INPUT_SYSTEM
+
+      
+
         public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
@@ -53,6 +58,11 @@ namespace StarterAssets
         public void OnPause(InputValue value)
         {
             PauseInput(value.isPressed);
+        }
+
+        public void OnAttack(InputValue value)
+        {
+            AttackInput(value.isPressed);
         }
 #endif
 
@@ -82,6 +92,11 @@ namespace StarterAssets
             pause = !pause;
 			cursorLocked = !pause;
 			SetCursorState(cursorLocked);
+        }
+
+        public void AttackInput(bool newSprintState)
+        {
+            attack = newSprintState;
         }
 
         private void OnApplicationFocus(bool hasFocus)

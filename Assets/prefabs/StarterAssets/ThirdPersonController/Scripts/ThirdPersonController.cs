@@ -160,6 +160,7 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            Attack();
         }
 
         private void LateUpdate()
@@ -280,6 +281,15 @@ namespace StarterAssets
             }
         }
 
+        private void Attack()
+        {
+            if (_input.attack)
+            {
+                _animator.SetTrigger("Attack");
+                _input.attack = false;
+            }
+        }
+
         private void JumpAndGravity()
         {
             if (Grounded)
@@ -389,5 +399,7 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
+
+        
     }
 }

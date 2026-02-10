@@ -15,7 +15,7 @@ namespace StarterAssets
 
         public void VirtualLookInput(Vector2 virtualLookDirection)
         {
-            starterAssetsInputs.LookInput(virtualLookDirection);
+            starterAssetsInputs.LookInput(virtualLookDirection.normalized);
         }
 
         public void VirtualJumpInput(bool virtualJumpState)
@@ -27,7 +27,12 @@ namespace StarterAssets
         {
             starterAssetsInputs.SprintInput(virtualSprintState);
         }
-        
+
+        public void VirtualAttackInput(bool virtualSprintState)
+        {
+            starterAssetsInputs.AttackInput(virtualSprintState);
+        }
+
     }
 
 }
