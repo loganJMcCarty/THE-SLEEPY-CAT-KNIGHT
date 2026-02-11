@@ -7,9 +7,9 @@ using UnityEditor;
 
 public class MainUIManager : MonoBehaviour
 {
-    public Canvas mainMenu;
+    public GameObject mainMenu;
 
-    public Canvas setting;
+    public GameObject setting;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
