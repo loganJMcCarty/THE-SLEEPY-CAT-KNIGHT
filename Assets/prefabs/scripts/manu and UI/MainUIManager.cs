@@ -24,7 +24,9 @@ public class MainUIManager : MonoBehaviour
 
     public void startnew()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+        
     }
 
     public void settings()

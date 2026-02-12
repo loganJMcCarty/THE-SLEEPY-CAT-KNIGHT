@@ -17,6 +17,7 @@ public class Setting : MonoBehaviour
 
     public void startnew()
     {
-        SceneManager.LoadScene(1);
+       Time.timeScale = 1.0f;
+        SceneManager.LoadScene(0);
     }
 }

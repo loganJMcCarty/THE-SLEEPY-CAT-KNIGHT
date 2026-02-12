@@ -326,6 +326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Sword_01_a
       objectReference: {fileID: 0}
+    - target: {fileID: 8683071444378264997, guid: d08faae44e6b5574181d1134ab9b5b75, type: 3}
+      propertyPath: m_TagString
+      value: Hit
+      objectReference: {fileID: 0}
     - target: {fileID: 8683071444378630533, guid: d08faae44e6b5574181d1134ab9b5b75, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1253768
@@ -384,15 +388,15 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8683071444378264997, guid: d08faae44e6b5574181d1134ab9b5b75, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2142112823714356743}
+      addedObject: {fileID: 2955962752140962655}
   m_SourcePrefab: {fileID: 100100000, guid: d08faae44e6b5574181d1134ab9b5b75, type: 3}
 --- !u!1 &4786869412632935860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8683071444378264997, guid: d08faae44e6b5574181d1134ab9b5b75, type: 3}
   m_PrefabInstance: {fileID: 4246356955593578513}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &2142112823714356743
-CapsuleCollider:
+--- !u!65 &2955962752140962655
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -406,13 +410,11 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.090391144
-  m_Height: 0.80533487
-  m_Direction: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18078229, y: 0.80533487, z: 0.021987041}
   m_Center: {x: 0.00000003842998, y: -0.3223742, z: -0.0000038867533}
 --- !u!4 &4786869412633026964 stripped
 Transform:
