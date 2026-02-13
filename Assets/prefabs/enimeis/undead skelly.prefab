@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1936620618195260338}
   - component: {fileID: 8202607731465266968}
   - component: {fileID: 6464078168534018079}
-  - component: {fileID: 7946099422896245270}
+  - component: {fileID: 6705420377615366504}
   m_Layer: 0
   m_Name: undead skelly
   m_TagString: Untagged
@@ -82,7 +82,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -131,7 +131,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7395808269725357589}
   m_Enabled: 1
-  m_AgentTypeID: 658490984
+  m_AgentTypeID: 0
   m_Radius: 0.58
   m_Speed: 3.5
   m_Acceleration: 5
@@ -145,8 +145,8 @@ NavMeshAgent:
   m_BaseOffset: 2.13
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!65 &7946099422896245270
-BoxCollider:
+--- !u!136 &6705420377615366504
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -163,9 +163,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.99999976, y: 1.7355144, z: 0.99999976}
-  m_Center: {x: 0, y: -1.2550114, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.8453269
+  m_Direction: 1
+  m_Center: {x: -0.11, y: -1.2373366, z: -0.09}
 --- !u!1001 &23045943793608167
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class EnemyAI : MonoBehaviour
     private float distanceToTarget;
     Coroutine idleToPatrol;
 
-
+    
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
         enemyState = EnemyState.Idle;
         distanceToTarget = Mathf.Abs(Vector3.Distance(target.transform.position, transform.position));
 
-
+       
     }
     IEnumerator SwitchToPatrol()
     {
@@ -44,6 +44,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
 
+        
         distanceToTarget = Mathf.Abs(Vector3.Distance(target.transform.position, transform.position));
         switch (enemyState)
         {
@@ -111,6 +112,8 @@ public class EnemyAI : MonoBehaviour
         {
             isPlayerInRange = true;
         }
+
+       
     }
 
     private void OnTriggerExit(Collider other)
