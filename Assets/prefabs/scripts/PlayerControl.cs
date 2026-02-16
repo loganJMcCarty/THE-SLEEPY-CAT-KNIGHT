@@ -1,9 +1,14 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerControl : MonoBehaviour
 {
+    public static event Action OnPLayerDeath;
+    
     public Slider healthBar;
 
     public TMP_Text healthText;
@@ -30,7 +35,9 @@ public class PlayerControl : MonoBehaviour
             healthBar.gameObject.SetActive(false);
             animator.SetBool("isDead" , true);
 
-            Destroy(gameObject, 7f);
+            //Destroy(gameObject, 7f);  //dont like this but keeping it just in case. 
+            Debug.Log(" You are daed not big suprise");
+            OnPLayerDeath?.Invoke();
         }
     }
 
