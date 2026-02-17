@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class PlayerControl : MonoBehaviour
     public int maxHealth = 0;
 
     public Animator animator;
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,4 +52,6 @@ public class PlayerControl : MonoBehaviour
             health = health - 25;
         }
     }
+
+    
 }

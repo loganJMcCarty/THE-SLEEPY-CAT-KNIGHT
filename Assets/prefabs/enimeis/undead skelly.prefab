@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 2192267544270376051}
   - component: {fileID: 1936620618195260338}
   - component: {fileID: 8202607731465266968}
+  - component: {fileID: 1520891032359172172}
   - component: {fileID: 6464078168534018079}
   - component: {fileID: 6705420377615366504}
   m_Layer: 0
   m_Name: undead skelly
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +124,20 @@ MonoBehaviour:
   target: {fileID: 0}
   patrolPoint: {fileID: 0}
   enemyState: 0
+--- !u!114 &1520891032359172172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395808269725357589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b4a56911ad67748addf5513e600447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyLogic
+  health: 100
+  animator: {fileID: 7580401359445777682}
 --- !u!195 &6464078168534018079
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -160,11 +175,11 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
   m_Height: 1.8453269
   m_Direction: 1
   m_Center: {x: -0.11, y: -1.2373366, z: -0.09}

@@ -43,6 +43,17 @@ public class MainUIManager : MonoBehaviour
         setting.gameObject.SetActive(false);
     }
 
+    public void retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void nope()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
     public void Exit()
     {
 #if UNITY_EDITOR
