@@ -16,8 +16,8 @@ public class EnemyLogic : MonoBehaviour
     {
         if (health <= 0)
         {
-            animator.SetBool("Dead", true);
-            Destroy(gameObject, 7f);
+            animator.SetBool("IsDead", true);
+            //Destroy(gameObject, 7f);
         }
     }
 

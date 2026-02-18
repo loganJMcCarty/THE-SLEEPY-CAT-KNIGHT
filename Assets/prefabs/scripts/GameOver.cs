@@ -8,13 +8,13 @@ public class GameOver : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerControl.OnPLayerDeath += EnableGameOverMenu;
+        PlayerControl.OnPlayerDeath += EnableGameOverMenu;
         Debug.Log("GAME OVER");
     }
 
     private void OnDisable()
     {
-        PlayerControl.OnPLayerDeath -= EnableGameOverMenu;
+        PlayerControl.OnPlayerDeath -= EnableGameOverMenu;
     }
 
     public void EnableGameOverMenu()

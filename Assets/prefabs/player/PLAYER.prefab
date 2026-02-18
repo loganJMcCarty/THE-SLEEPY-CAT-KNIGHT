@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 5703679156374648918}
   - component: {fileID: 1219558157067144615}
   - component: {fileID: 6073383412642096063}
+  - component: {fileID: 8082721438426156568}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -255,6 +256,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64fe380f0574b04791363c0edc9661a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CanvasHelper
+--- !u!114 &8082721438426156568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205199517368380946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb432a946de05c43802eaa9c4c52bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainUIManager
+  mainMenu: {fileID: 0}
+  setting: {fileID: 0}
 --- !u!1 &2119737238778835918
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +977,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 508106737312129343}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8082721438426156568}
+        m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        m_MethodName: nope
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6973231082610697415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,7 +1325,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3925476762052158336}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8082721438426156568}
+        m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        m_MethodName: retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1050850758533532657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1598,11 +1637,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1427
+      value: 1436
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1427
+      value: 1436
       objectReference: {fileID: 0}
     - target: {fileID: 6859704303137688432, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_IsTrigger
