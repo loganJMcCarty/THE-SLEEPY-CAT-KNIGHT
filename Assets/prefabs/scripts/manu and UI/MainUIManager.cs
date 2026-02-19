@@ -43,6 +43,13 @@ public class MainUIManager : MonoBehaviour
         setting.gameObject.SetActive(false);
     }
 
+    public void ToBattle()
+    {
+        setting.gameObject.SetActive(true);
+
+        mainMenu.gameObject.SetActive(false);
+    }
+
     public void retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

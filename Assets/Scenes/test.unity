@@ -172,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 413896725}
     - target: {fileID: 2013902069754290424, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1439
+      value: 1451
       objectReference: {fileID: 0}
     - target: {fileID: 2337579596224603613, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Name
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 1111614070}
     - target: {fileID: 8320528224676321707, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1439
+      value: 1451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2323,7 +2323,7 @@ PrefabInstance:
       objectReference: {fileID: 1717521835}
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1019
+      value: 1025
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh
@@ -2331,7 +2331,7 @@ PrefabInstance:
       objectReference: {fileID: 667658682}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1019
+      value: 1025
       objectReference: {fileID: 0}
     - target: {fileID: 6563668583525996329, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_Mesh
@@ -2712,9 +2712,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 922940115}
     m_Modifications:
+    - target: {fileID: 4786869412633026964, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.125377
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786869412633026964, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9579862
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705420377615366504, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: m_Radius
+      value: 0.31
+      objectReference: {fileID: 0}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7478990788155511861, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_LocalPosition.x
