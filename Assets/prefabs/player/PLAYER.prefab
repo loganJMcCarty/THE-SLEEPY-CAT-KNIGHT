@@ -1658,11 +1658,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1442
+      value: 1451
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1442
+      value: 1451
       objectReference: {fileID: 0}
     - target: {fileID: 6859704303137688432, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_IsTrigger
