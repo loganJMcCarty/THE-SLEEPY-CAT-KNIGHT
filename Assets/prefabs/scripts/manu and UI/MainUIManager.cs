@@ -10,6 +10,17 @@ public class MainUIManager : MonoBehaviour
     public GameObject mainMenu;
 
     public GameObject setting;
+
+    public GameObject assetsUsed;
+
+    public GameObject youtubeTuttorial;
+
+    public GameObject music;
+
+    public GameObject people;
+
+    public GameObject nextButton;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +45,12 @@ public class MainUIManager : MonoBehaviour
         setting.gameObject.SetActive(true);
 
         mainMenu.gameObject.SetActive(false);
+    }
+
+    public void credits()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(4);
     }
 
     public void GOBACKDEARGOD()
@@ -61,6 +78,38 @@ public class MainUIManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void skip()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
+    public void next()
+    {
+        assetsUsed.gameObject.SetActive(false);
+
+        youtubeTuttorial.gameObject.SetActive(true);
+
+        nextButton.gameObject.SetActive(false);
+    }
+
+    public void ytnext()
+    {
+        youtubeTuttorial.gameObject.SetActive(false);
+
+        music.gameObject.SetActive(true);
+
+        nextButton.gameObject.SetActive(false);
+    }
+
+    public void musicnext()
+    {
+        music.gameObject.SetActive(false);
+
+        people.gameObject.SetActive(true);
+
+        nextButton.gameObject.SetActive(false);
+    }
     public void Exit()
     {
 #if UNITY_EDITOR
