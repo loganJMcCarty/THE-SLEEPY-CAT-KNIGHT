@@ -8,6 +8,7 @@ TagManager:
   - Hit
   - enemy
   - player sword
+  - Check
   layers:
   - Default
   - TransparentFX

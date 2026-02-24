@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
 public class EnemyLogic : MonoBehaviour
@@ -8,20 +9,28 @@ public class EnemyLogic : MonoBehaviour
     
 
     public Animator animator;
-    private object rb;
+    private EnemyAI enemyAI;
+    private NavMeshAgent navMeshAgent;
+
+    bool isDead;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        enemyAI = GetComponent<EnemyAI>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (health <= 0 && isDead == false)
         {
-            animator.SetBool("IsDead", true);
+            isDead = true;
+            animator.SetTrigger("IsDead");
+            enemyAI.enabled = false;
+            navMeshAgent.SetDestination(transform.position);
+            navMeshAgent.enabled = false;
             //Destroy(gameObject, 7f);
            
         }

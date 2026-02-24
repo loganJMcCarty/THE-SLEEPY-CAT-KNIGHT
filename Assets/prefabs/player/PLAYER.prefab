@@ -270,6 +270,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainUIManager
   mainMenu: {fileID: 0}
   setting: {fileID: 0}
+  assetsUsed: {fileID: 0}
+  youtubeTuttorial: {fileID: 0}
+  music: {fileID: 0}
+  people: {fileID: 0}
+  nextButton: {fileID: 0}
 --- !u!1 &2119737238778835918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,11 +1663,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1451
+      value: 1463
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1451
+      value: 1463
       objectReference: {fileID: 0}
     - target: {fileID: 6859704303137688432, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_IsTrigger
@@ -1736,6 +1741,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8446437600897838120, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7162224226509718107}
+    - targetCorrespondingSourceObject: {fileID: 8446437600897838120, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7994398782468557324}
   m_SourcePrefab: {fileID: 100100000, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
 --- !u!1 &4922980194965391108 stripped
 GameObject:
@@ -1763,6 +1771,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059270456, y: 0.47621953, z: 0.031358436}
   m_Center: {x: 0.0018764724, y: 0.4707297, z: -0.0000012089872}
+--- !u!54 &7994398782468557324
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4922980194965391108}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &4933087200985228708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8436349260797480584, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
