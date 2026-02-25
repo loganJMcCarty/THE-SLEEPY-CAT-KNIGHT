@@ -1663,11 +1663,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068331351009020884, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1463
+      value: 1466
       objectReference: {fileID: 0}
     - target: {fileID: 4764318085199377031, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_VersionIndex
-      value: 1463
+      value: 1466
       objectReference: {fileID: 0}
     - target: {fileID: 6859704303137688432, guid: d9b760f9c8675ce47befd945425df3be, type: 3}
       propertyPath: m_IsTrigger
@@ -1937,6 +1937,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7822778069179500106}
+    - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1091860273865505081}
   m_SourcePrefab: {fileID: 100100000, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
 --- !u!4 &3041828491218790560 stripped
 Transform:
@@ -1995,7 +1998,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.25
   m_Height: 2.23
   m_Direction: 1
   m_Center: {x: 0.09, y: 0.62782156, z: 0}
@@ -2012,6 +2015,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOver
   gameOverMenu: {fileID: 6973231082610697415}
+--- !u!114 &1091860273865505081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259984915011719676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b577d21c67c02114eacfc5e2e577dbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!4 &8037647136336612166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}

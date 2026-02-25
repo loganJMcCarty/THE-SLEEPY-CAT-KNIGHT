@@ -3,7 +3,7 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private static CheckPoint instance;
-    public Vector2 lastCheckPointPos;
+    public Vector3 lastCheckPointPos;
 
     private void Awake()
     {
