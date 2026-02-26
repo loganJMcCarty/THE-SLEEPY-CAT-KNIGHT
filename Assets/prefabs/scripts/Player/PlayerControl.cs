@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine.InputSystem;
 
+
 public class PlayerControl : MonoBehaviour
 {
     public static event Action OnPlayerDeath;
