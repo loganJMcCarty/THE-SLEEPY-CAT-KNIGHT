@@ -40,6 +40,7 @@ public class MainUIManager : MonoBehaviour
         
     }
 
+    // for the button settings not the in game settings
     public void settings()
     {
         setting.gameObject.SetActive(true);

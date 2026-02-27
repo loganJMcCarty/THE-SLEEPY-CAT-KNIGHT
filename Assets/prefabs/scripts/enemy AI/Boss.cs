@@ -28,7 +28,7 @@ public class Boss : MonoBehaviour
     }
     IEnumerator SwitchToPatrol()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         enemyState = EnemyState.Potrol;
         idleToPatrol = null;
     }
@@ -129,6 +129,6 @@ public class Boss : MonoBehaviour
     // makes the radies of the colider of the enimies more clear
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 30f);
+        Gizmos.DrawSphere(transform.position, 100f);
     }
 }
