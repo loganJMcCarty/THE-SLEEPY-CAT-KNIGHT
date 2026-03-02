@@ -21,6 +21,7 @@ public class MainUIManager : MonoBehaviour
 
     public GameObject nextButton;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +34,11 @@ public class MainUIManager : MonoBehaviour
         
     }
 
+    public void resume()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    
     public void startnew()
     {
         Time.timeScale = 1;
