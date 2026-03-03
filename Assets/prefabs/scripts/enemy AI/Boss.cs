@@ -61,7 +61,7 @@ public class Boss : MonoBehaviour
 
             case EnemyState.Potrol:
                 float distanceToPatrolPoint = Mathf.Abs(Vector3.Distance(patrolPoint.position, transform.position));
-                if (distanceToPatrolPoint > 3)
+                if (distanceToPatrolPoint > 2)
                 {
                     SwitchState(1);
                     ai.SetDestination(patrolPoint.position);
@@ -71,7 +71,7 @@ public class Boss : MonoBehaviour
                     SwitchState(0);
                 }
 
-                if (distanceToTarget <= 10)
+                if (distanceToTarget <= 50)
                 {
 
                     enemyState = EnemyState.Chase;
@@ -85,12 +85,12 @@ public class Boss : MonoBehaviour
                 SwitchState(2);
                 ai.SetDestination(target.transform.position);
 
-                if (distanceToTarget < 6)
+                if (distanceToTarget < 17)
                 {
                     enemyState = EnemyState.Attack;
                 }
 
-                else if (distanceToTarget >= 15)
+                else if (distanceToTarget >= 60)
                 {
                     enemyState = EnemyState.Idle;
                 }
@@ -99,7 +99,7 @@ public class Boss : MonoBehaviour
             case EnemyState.Attack:
                 SwitchState(3);
 
-                if (distanceToTarget > 15)
+                if (distanceToTarget > 60)
                 {
                     enemyState = EnemyState.Idle;
                 }
@@ -129,6 +129,6 @@ public class Boss : MonoBehaviour
     // makes the radies of the colider of the enimies more clear
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 100f);
+        Gizmos.DrawSphere(transform.position, 70f);
     }
 }
