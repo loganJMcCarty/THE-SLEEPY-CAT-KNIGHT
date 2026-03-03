@@ -57,7 +57,7 @@ public class MainUIManager : MonoBehaviour
     public void credits()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void GOBACKDEARGOD()
