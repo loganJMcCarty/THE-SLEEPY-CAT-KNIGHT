@@ -68,6 +68,11 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    public void Addhealth(float addedHealth)
+    {
+        health += (int)addedHealth;
+    }
+
     private void DisablePlayerMovement()
     {
         

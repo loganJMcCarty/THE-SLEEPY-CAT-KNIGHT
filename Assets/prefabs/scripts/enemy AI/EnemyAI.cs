@@ -28,7 +28,7 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator SwitchToPatrol()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         enemyState = EnemyState.Potrol;
         idleToPatrol = null;
     }
@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
                     SwitchState(0);
                 }
 
-                if (distanceToTarget <= 10)
+                if (distanceToTarget <= 15)
                 {
 
                     enemyState = EnemyState.Chase;
@@ -90,7 +90,7 @@ public class EnemyAI : MonoBehaviour
                     enemyState = EnemyState.Attack;
                 }
 
-                else if (distanceToTarget >=15)
+                else if (distanceToTarget >=20)
                 {
                     enemyState = EnemyState.Idle;
                 }
@@ -99,7 +99,7 @@ public class EnemyAI : MonoBehaviour
             case EnemyState.Attack:
                 SwitchState(3);
 
-                if (distanceToTarget > 15)
+                if (distanceToTarget > 20)
                 {
                     enemyState = EnemyState.Idle;
                 }
@@ -129,7 +129,7 @@ public class EnemyAI : MonoBehaviour
     // makes the radies of the colider of the enimies more clear
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 10f);
+        Gizmos.DrawSphere(transform.position, 15f);
     }
 
 

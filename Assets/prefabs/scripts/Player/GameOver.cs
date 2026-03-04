@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour
     private void OnEnable()
     {
         PlayerControl.OnPlayerDeath += EnableGameOverMenu;
-        Debug.Log("GAME OVER");
+        Debug.Log("LETS FRECKING GO!!!!!!!!");
     }
 
     private void OnDisable()
