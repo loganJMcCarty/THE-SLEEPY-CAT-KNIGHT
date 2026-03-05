@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 [RequireComponent (typeof(PlayerControl))]
@@ -7,6 +8,8 @@ public class Interactor : MonoBehaviour
    private PlayerControl control;
 
    private Interacable interacable;
+
+   public bool Interacting;
 
     [SerializeField] private KeyCode interactKey = KeyCode.E;
     [SerializeField] private GameObject interactText;
@@ -20,16 +23,21 @@ public class Interactor : MonoBehaviour
     {
         interactText.SetActive(interacable != null);
 
-        if (Input.GetKeyDown(interactKey) && control.healthText) //might fix
+        if (Interacting && control.healthText)
             Interact();
     }
 
     private void Interact()
     {
-        if (interacable != null) 
+        if (interacable == null) 
             return;
 
-        interacable.Interact(gameObject);// not working
+        interacable.Interact(gameObject);// not working gives eorror sometimes
+    }
+
+    public void OnInteract(InputValue value)
+    {
+        Interacting = value.isPressed;
     }
 
     private void OnTriggerEnter(Collider other)

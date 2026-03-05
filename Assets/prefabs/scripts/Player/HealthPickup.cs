@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class HealthPickup : Interacable
 {
-    [SerializeField] private float health = 50f;
+    [SerializeField] private int health = (int)50f;
 
-    public override void Interact(GameObject Player)
+    public override void Interact(GameObject PlayerArmature)
     {
-        Player.AddComponent<PlayerControl>().Addhealth(health);
+        PlayerArmature.GetComponent<PlayerControl>().Addhealth(health);
         
-        base.Interact(Player);
+        base.Interact(PlayerArmature);
     }
 }
