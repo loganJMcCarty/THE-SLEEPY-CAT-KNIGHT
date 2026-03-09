@@ -2431,7 +2431,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1028
+  m_VersionIndex: 1034
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4791,7 +4791,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1028
+  m_VersionIndex: 1034
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7663,15 +7663,15 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8613403861048924280, guid: f4dac71e5812d0e4eae5e880ac9b2056, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6859704303137688432}
+      addedObject: {fileID: 510542489332351274}
   m_SourcePrefab: {fileID: 100100000, guid: f4dac71e5812d0e4eae5e880ac9b2056, type: 3}
 --- !u!1 &8446437600897838120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8613403861048924280, guid: f4dac71e5812d0e4eae5e880ac9b2056, type: 3}
   m_PrefabInstance: {fileID: 197933061965886544}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &6859704303137688432
-CapsuleCollider:
+--- !u!65 &510542489332351274
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7688,11 +7688,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.06612619
-  m_Height: 0.70884234
-  m_Direction: 1
-  m_Center: {x: 0.0000004625038, y: 0.35442123, z: 0.00000086917373}
+  serializedVersion: 3
+  m_Size: {x: 0.2903057, y: 0.6113859, z: 0.03135848}
+  m_Center: {x: 0.00542815, y: 0.542486, z: 0.0000032846765}
 --- !u!4 &9114184569354253970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8990070519801627330, guid: f4dac71e5812d0e4eae5e880ac9b2056, type: 3}

@@ -30,7 +30,9 @@ namespace StarterAssets
 
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
+        public AudioClip[] AttackAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
+        [Range(0, 1)] public float AttackAudioVolume = 0.5f;
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
@@ -380,7 +382,7 @@ namespace StarterAssets
                 GroundedRadius);
         }
 
-        private void OnFootstep(AnimationEvent animationEvent)
+        public void OnFootstep(AnimationEvent animationEvent)
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
@@ -392,7 +394,7 @@ namespace StarterAssets
             }
         }
 
-        private void OnLand(AnimationEvent animationEvent)
+        public void OnLand(AnimationEvent animationEvent)
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
@@ -400,6 +402,13 @@ namespace StarterAssets
             }
         }
 
-        
+        public void OnSwing(AnimationEvent animationEvent)
+        {
+            if (animationEvent.animatorClipInfo.weight > 0.5f)
+            {
+                var index = Random.Range(0, AttackAudioClips.Length);
+                AudioSource.PlayClipAtPoint(AttackAudioClips[index], transform.TransformPoint(_controller.center), AttackAudioVolume);
+            }
+        }
     }
 }

@@ -15,9 +15,14 @@ YOUTUBE:
 kozobot games enemy shooting tutorial
 SoloDev Tom , health bar
 BMo ,GAME OVER MENU tutorial.
-
 Blackthornprod, how to make checkpoints in unity
 
+Thunder dev, make a health pickup
 music:
 lexin_Music
 vibehorn
+
+souds:
+DavidDumaisAudio, Sword slash
+
+freesound_community, Knight footstep
