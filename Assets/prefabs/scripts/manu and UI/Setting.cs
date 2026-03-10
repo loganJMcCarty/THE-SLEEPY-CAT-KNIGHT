@@ -1,18 +1,60 @@
+using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Setting : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Scrollbar masterSlider;
+
+    public Scrollbar musicSlider;
+
+    public Scrollbar fbxSlider;
+ 
+
     void Start()
+    {
+        if(masterSlider != null)
+        {
+            PreferencesManager.GetMasterVolume();
+        }
+
+        if(musicSlider != null)
+        {
+            PreferencesManager.GetMusicVolume();
+        }
+
+        if (fbxSlider != null)
+        {
+            PreferencesManager.GetFpxVolume();
+        }
+    }
+
+   
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeSoundVolume(float soundlevel)
     {
-        
+        if (AudioManager.Instance != null)
+
+        AudioManager.Instance.ChangeSoundVolume(soundlevel);
+    }
+
+    public void ChangeMusicVolume(float soundlevel)
+    {
+        if (AudioManager.Instance != null)
+
+            AudioManager.Instance.ChangeMusicVolume(soundlevel);
+    }
+
+    public void ChangeFpxVolume(float soundlevel)
+    {
+        if (AudioManager.Instance != null)
+
+            AudioManager.Instance.ChangeFpxVolume(soundlevel);
     }
 
     public void startnew()
