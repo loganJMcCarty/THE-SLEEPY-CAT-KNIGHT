@@ -10,6 +10,8 @@ public class Setting : MonoBehaviour
     public Slider musicSlider;
 
     public Slider fbxSlider;
+
+    public Slider sensitivitySlider;
  
 
     void Start()
@@ -56,6 +58,11 @@ public class Setting : MonoBehaviour
         if (AudioManager.Instance != null)
 
             AudioManager.Instance.ChangeFpxVolume(soundlevel);
+    }
+
+    public void sensitivity()
+    {
+
     }
 
     public void startnew()
