@@ -5,28 +5,29 @@ using UnityEngine.UI;
 
 public class Setting : MonoBehaviour
 {
-    public Scrollbar masterSlider;
+    public Slider masterSlider;
 
-    public Scrollbar musicSlider;
+    public Slider musicSlider;
 
-    public Scrollbar fbxSlider;
+    public Slider fbxSlider;
  
 
     void Start()
     {
         if(masterSlider != null)
         {
-            PreferencesManager.GetMasterVolume();
+            masterSlider.value = PreferencesManager.GetMasterVolume();
         }
 
         if(musicSlider != null)
         {
-            PreferencesManager.GetMusicVolume();
+            musicSlider.value = PreferencesManager.GetMusicVolume();
+                
         }
 
         if (fbxSlider != null)
         {
-            PreferencesManager.GetFpxVolume();
+            fbxSlider.value = PreferencesManager.GetFpxVolume();
         }
     }
 

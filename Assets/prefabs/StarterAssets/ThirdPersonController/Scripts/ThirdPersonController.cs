@@ -28,6 +28,7 @@ namespace StarterAssets
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
 
+        public AudioSource sfx;
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         public AudioClip[] AttackAudioClips;
@@ -398,7 +399,7 @@ namespace StarterAssets
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                sfx.PlayOneShot(LandingAudioClip, FootstepAudioVolume);
             }
         }
 
@@ -407,7 +408,7 @@ namespace StarterAssets
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
                 var index = Random.Range(0, AttackAudioClips.Length);
-                AudioSource.PlayClipAtPoint(AttackAudioClips[index], transform.TransformPoint(_controller.center), AttackAudioVolume);
+                sfx.PlayOneShot(AttackAudioClips[index],AttackAudioVolume);
             }
         }
     }

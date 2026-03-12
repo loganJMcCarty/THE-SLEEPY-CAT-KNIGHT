@@ -14,7 +14,7 @@ public static class PreferencesManager
 
     public static float GetFpxVolume()
     {
-        return PlayerPrefs.GetFloat("FpxVolume", 1);
+        return PlayerPrefs.GetFloat("SfxVolume", 1);
     }
 
     public static void SetMusicVolume(float soundlevel)
@@ -29,7 +29,7 @@ public static class PreferencesManager
 
     public static void SetFpxVolume(float soundlevel)
     {
-        PlayerPrefs.SetFloat("FpxVolume", soundlevel);
+        PlayerPrefs.SetFloat("SfxVolume", soundlevel);
     }
 
 
