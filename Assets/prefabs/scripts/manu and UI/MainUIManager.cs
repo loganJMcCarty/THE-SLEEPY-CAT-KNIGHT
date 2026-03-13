@@ -21,11 +21,23 @@ public class MainUIManager : MonoBehaviour
 
     public GameObject nextButton;
 
+    private static CheckPoint instance;
+    public Vector3 lastCheckPointPos;
+    private CheckPoint check;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        check = GameObject.FindGameObjectWithTag("Check").GetComponent<CheckPoint>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            check.lastCheckPointPos = transform.position;
+        }
     }
 
     // Update is called once per frame
@@ -42,8 +54,8 @@ public class MainUIManager : MonoBehaviour
     public void startnew()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(1);
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 
     // for the button settings not the in game settings
