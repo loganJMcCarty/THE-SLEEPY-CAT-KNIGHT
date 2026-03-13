@@ -13,6 +13,7 @@ public class Interactor : MonoBehaviour
 
     [SerializeField] private KeyCode interactKey = KeyCode.E;
     [SerializeField] private GameObject interactText;
+    [SerializeField] private GameObject key;
 
     private void Start()
     {

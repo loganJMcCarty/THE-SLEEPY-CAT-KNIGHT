@@ -16,6 +16,8 @@ public class PlayerControl : MonoBehaviour
 
     public TMP_Text healthText;
 
+    public GameObject key;
+
     public int health = 100;
 
     public int maxHealth = 0;

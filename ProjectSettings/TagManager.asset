@@ -9,6 +9,7 @@ TagManager:
   - enemy
   - player sword
   - Check
+  - nextS
   layers:
   - Default
   - TransparentFX
