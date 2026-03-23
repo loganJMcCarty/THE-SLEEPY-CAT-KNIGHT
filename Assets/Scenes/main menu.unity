@@ -2319,6 +2319,8 @@ MonoBehaviour:
   music: {fileID: 0}
   people: {fileID: 0}
   nextButton: {fileID: 0}
+  startButton: {fileID: 211094356}
+  journy: {fileID: 270525152}
   lastCheckPointPos: {x: 0.92, y: 0.085, z: -0.18}
 --- !u!222 &1180211332
 CanvasRenderer:

@@ -21,6 +21,12 @@ public class MainUIManager : MonoBehaviour
 
     public GameObject nextButton;
 
+    public GameObject startButton;
+
+    public GameObject journy;
+
+   // -------------------------------------
+
     private static CheckPoint instance;
     public Vector3 lastCheckPointPos;
     private CheckPoint check;
@@ -48,14 +54,17 @@ public class MainUIManager : MonoBehaviour
 
     public void resume()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+
     }
     
     public void startnew()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
+        journy.gameObject.SetActive(true);
 
+        startButton.gameObject.SetActive(false);
     }
 
     // for the button settings not the in game settings
