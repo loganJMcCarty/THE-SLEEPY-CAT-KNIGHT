@@ -18,6 +18,8 @@ public class PlayerControl : MonoBehaviour
 
     public GameObject key;
 
+    
+
     public int health = 100;
 
     public int maxHealth = 0;
@@ -25,7 +27,10 @@ public class PlayerControl : MonoBehaviour
     public Animator animator;
 
     private PlayerInput playerInput;
-
+    //-------------------------------------------------------------
+   
+    
+    //---------------------------------------------------------------
     private void OnEnable()
     {
         OnPlayerDeath += DisablePlayerMovement;
@@ -39,9 +44,11 @@ public class PlayerControl : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        health = (Player.instance != null)?Player.instance.health: 250;
         maxHealth = health;
         playerInput = GetComponent<PlayerInput>();
         EnabledPlayerMovement();
+        
     }
 
     // Update is called once per frame

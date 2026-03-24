@@ -1,13 +1,14 @@
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData : MonoBehaviour
+public class PlayerData
 {
     public int level;
     public int health;
     public float[] position;
+    public bool hasstarted;
 
-    public PlayerData (PlayerData player)
+    public PlayerData (Player player)
     {
         level = player.level;
         health = player.health;
@@ -17,4 +18,6 @@ public class PlayerData : MonoBehaviour
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
     }
+
+    
 }

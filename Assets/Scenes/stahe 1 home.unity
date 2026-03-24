@@ -75953,7 +75953,7 @@ PrefabInstance:
       objectReference: {fileID: 1649731758}
     - target: {fileID: 2112199605512231536, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_VersionIndex
-      value: 43
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 2318975464397115056, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_Mesh
@@ -76003,6 +76003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: boat
       objectReference: {fileID: 0}
+    - target: {fileID: 5364115750665372854, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
+      propertyPath: m_TagString
+      value: Check
+      objectReference: {fileID: 0}
     - target: {fileID: 6741555184243053603, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -76013,7 +76017,7 @@ PrefabInstance:
       objectReference: {fileID: 1531078715}
     - target: {fileID: 8846077167986108849, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_VersionIndex
-      value: 31
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 9026141309279209505, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_Mesh

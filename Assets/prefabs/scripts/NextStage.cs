@@ -24,8 +24,12 @@ public class NextStage : Interacable
         }
     }
 
+     
+
     void Start()
     {
-        nextS = GameObject.FindGameObjectWithTag("nexts").GetComponent<NextStage>();
+        nextS = GameObject.FindGameObjectWithTag("nextS").GetComponent<NextStage>();
+
+        
     }
 }
