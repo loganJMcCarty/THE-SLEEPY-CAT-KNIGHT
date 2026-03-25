@@ -36,6 +36,12 @@ public class MainUIManager : MonoBehaviour
     void Start()
     {
         check = GameObject.FindGameObjectWithTag("Check").GetComponent<CheckPoint>();
+        if (Player.instance.hasstarted)
+        {
+            journy.gameObject.SetActive(true);
+
+            startButton.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,12 +61,14 @@ public class MainUIManager : MonoBehaviour
     public void resume()
     {
         Time.timeScale = 1;
-
+        SceneManager.LoadScene(Player.instance.level);
     }
     
     public void startnew()
     {
         Time.timeScale = 1;
+        Player.instance.hasstarted = true;
+        Player.instance.SavePlayer();
         SceneManager.LoadScene(1);
         journy.gameObject.SetActive(true);
 

@@ -14,9 +14,9 @@ public class PlayerPos : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        check = GameObject.FindGameObjectWithTag("Check").GetComponent<CheckPoint>();
+        check =CheckPoint.instance;
         
-        nextS = GameObject.FindGameObjectWithTag("nexts").GetComponent<NextStage>();
+        nextS = GameObject.FindGameObjectWithTag("nextS").GetComponent<NextStage>();// prob tag
         transform.position = check.lastCheckPointPos;
     }
 

@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class PlayerData
 {
     public int level;
@@ -12,12 +13,24 @@ public class PlayerData
     {
         level = player.level;
         health = player.health;
+        hasstarted = player.hasstarted;
 
         position = new float[3];
-        position[0] = player.transform.position.x;
-        position[1] = player.transform.position.y;
-        position[2] = player.transform.position.z;
+        position[0] = player.position[0];
+        position[1] = player.position[1];
+        position[2] = player.position[2];
     }
 
-    
+    public PlayerData()
+    {
+        level = 1;
+        health = 250;
+        hasstarted= false;
+        position = new float[3];
+        position[0] = 0;
+        position[1] = 0;
+        position[2] = 0;
+    }
+
+
 }

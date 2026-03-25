@@ -2,7 +2,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public class SaveSystem : MonoBehaviour
+public static class SaveSystem
 {
     public static void SavePlayer (Player player)
     {
@@ -13,26 +13,40 @@ public class SaveSystem : MonoBehaviour
         PlayerData data = new PlayerData(player);
 
         formatter.Serialize(stream, data);
+       
         stream.Close();
     }
 
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.fun";
-        if (File.Exists(path))
+        FileStream stream = new FileStream(path, FileMode.Open);
+        if (File.Exists(path) && stream.Length > 0)
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
 
+
+            Debug.Log("OLD");
             PlayerData data = formatter.Deserialize(stream) as PlayerData;
+          
             stream.Close();
             
             return data;
         }
         else
         {
-            Debug.LogError("Save file not here" + path);
-            return null;
+            Debug.Log("NEW");
+            PlayerData data = new PlayerData();
+            return data;
+        }
+    }
+
+    public static void DeletePlayerData()
+    {
+        string path = Application.persistentDataPath + "/player.fun";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
         }
     }
 }

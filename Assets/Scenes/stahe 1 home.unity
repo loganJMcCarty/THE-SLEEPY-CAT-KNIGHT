@@ -76005,7 +76005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5364115750665372854, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_TagString
-      value: Check
+      value: nextS
       objectReference: {fileID: 0}
     - target: {fileID: 6741555184243053603, guid: 7d35133fda72f4f438e8a3dd0224a93c, type: 3}
       propertyPath: m_Mesh

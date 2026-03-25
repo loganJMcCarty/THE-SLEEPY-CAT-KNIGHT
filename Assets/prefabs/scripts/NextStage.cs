@@ -4,9 +4,8 @@ using UnityEngine.SceneManagement;
 public class NextStage : Interacable
     
 {
-    private NextStage nextS;
 
-    public Vector3 Playerpos;
+    public Vector3 playerpos;
     public override void Interact(GameObject PlayerArmature)
     {
         Time.timeScale = 1;
@@ -20,7 +19,12 @@ public class NextStage : Interacable
     {
         if (other.CompareTag("Player"))
         {
-            nextS.Playerpos = transform.position;
+            playerpos = new Vector3(8.26849365f, 14.1883631f, -59.8207703f);
+            Player.instance.level = 2;
+            Player.instance.position[0] = playerpos.x;
+            Player.instance.position[1] = playerpos.y;
+            Player.instance.position[2] = playerpos.z;
+            Player.instance.SavePlayer();
         }
     }
 
@@ -28,7 +32,6 @@ public class NextStage : Interacable
 
     void Start()
     {
-        nextS = GameObject.FindGameObjectWithTag("nextS").GetComponent<NextStage>();
 
         
     }

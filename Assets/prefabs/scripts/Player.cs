@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         {
             instance = this;
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     public void SavePlayer()
@@ -39,7 +40,8 @@ public class Player : MonoBehaviour
 
         level = data.level;
         health = data.health;
-
+        hasstarted = data.hasstarted;
+        position = new float[3];
         position[0] = data.position[0];
         position[1] = data.position[1];
         position[2] = data.position[2];
@@ -48,6 +50,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+       
         LoadPlayer();
+
     }
 }
