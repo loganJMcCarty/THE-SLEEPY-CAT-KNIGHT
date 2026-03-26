@@ -891,6 +891,10 @@ MonoBehaviour:
   music: {fileID: 0}
   people: {fileID: 0}
   nextButton: {fileID: 0}
+  startButton: {fileID: 0}
+  journy: {fileID: 0}
+  reset: {fileID: 0}
+  lastCheckPointPos: {x: 0, y: 0, z: 0}
 --- !u!114 &3551549919921947725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,7 +2921,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8082721438426156568}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: nope
+        m_MethodName: Nope
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3801,7 +3805,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8082721438426156568}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: retry
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4475,6 +4479,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8082721438426156568}
+    - target: {fileID: 5580893580288548556, guid: dfab62108ca947d4c9c415bb072d1b26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Nope
+      objectReference: {fileID: 0}
     - target: {fileID: 5687346820296383219, guid: dfab62108ca947d4c9c415bb072d1b26, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4672,7 +4680,7 @@ PrefabInstance:
       objectReference: {fileID: 7045687013188144626}
     - target: {fileID: 2168959376165086822, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_VersionIndex
-      value: 1622
+      value: 1637
       objectReference: {fileID: 0}
     - target: {fileID: 2902199118626374446, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: animator
@@ -4740,7 +4748,7 @@ PrefabInstance:
       objectReference: {fileID: 416879294414278462}
     - target: {fileID: 6929501816754861346, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_VersionIndex
-      value: 1622
+      value: 1637
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

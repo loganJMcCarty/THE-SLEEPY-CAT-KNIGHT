@@ -20,13 +20,12 @@ public static class SaveSystem
     public static PlayerData LoadPlayer()
     {
         string path = Application.persistentDataPath + "/player.fun";
-        FileStream stream = new FileStream(path, FileMode.Open);
-        if (File.Exists(path) && stream.Length > 0)
+        
+        if (File.Exists(path))
         {
+            FileStream stream = new FileStream(path, FileMode.Open);
             BinaryFormatter formatter = new BinaryFormatter();
 
-
-            Debug.Log("OLD");
             PlayerData data = formatter.Deserialize(stream) as PlayerData;
           
             stream.Close();
@@ -35,7 +34,6 @@ public static class SaveSystem
         }
         else
         {
-            Debug.Log("NEW");
             PlayerData data = new PlayerData();
             return data;
         }
@@ -47,6 +45,8 @@ public static class SaveSystem
         if (File.Exists(path))
         {
             File.Delete(path);
+            Player.instance.DeletePlayer();
+            
         }
     }
 }

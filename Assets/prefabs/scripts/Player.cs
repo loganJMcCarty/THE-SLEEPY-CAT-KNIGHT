@@ -48,9 +48,22 @@ public class Player : MonoBehaviour
         
     }
 
+    public void DeletePlayer()
+    {
+        PlayerData data = new PlayerData();
+
+        level = data.level;
+        health = data.health;
+        hasstarted = data.hasstarted;
+        position = new float[3];
+        position[0] = data.position[0];
+        position[1] = data.position[1];
+        position[2] = data.position[2];
+    }
+
     private void Start()
     {
-       
+     
         LoadPlayer();
 
     }

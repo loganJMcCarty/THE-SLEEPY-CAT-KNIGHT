@@ -25,6 +25,8 @@ public class MainUIManager : MonoBehaviour
 
     public GameObject journy;
 
+    public GameObject reset;
+
    // -------------------------------------
 
     private static CheckPoint instance;
@@ -35,36 +37,47 @@ public class MainUIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        check = GameObject.FindGameObjectWithTag("Check").GetComponent<CheckPoint>();
-        if (Player.instance.hasstarted)
+        //check = GameObject.FindGameObjectWithTag("Check").GetComponent<CheckPoint>();
+        if (Player.instance.hasstarted && journy != null && reset != null && startButton != null)
         {
             journy.gameObject.SetActive(true);
+
+            reset.gameObject.SetActive(true);
 
             startButton.gameObject.SetActive(false);
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             check.lastCheckPointPos = transform.position;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
         
     }
+    public void Restart()
+    {
+        
+        
+        SaveSystem.DeletePlayerData();
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
 
-    public void resume()
+    }
+
+    public void Resume()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(Player.instance.level);
     }
     
-    public void startnew()
+    public void Startnew()
     {
         Time.timeScale = 1;
         Player.instance.hasstarted = true;
@@ -72,18 +85,20 @@ public class MainUIManager : MonoBehaviour
         SceneManager.LoadScene(1);
         journy.gameObject.SetActive(true);
 
+        reset.gameObject.SetActive(true);
+
         startButton.gameObject.SetActive(false);
     }
 
     // for the button settings not the in game settings
-    public void settings()
+    public void Settings()
     {
         setting.gameObject.SetActive(true);
 
         mainMenu.gameObject.SetActive(false);
     }
 
-    public void credits()
+    public void Credits()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(3);
@@ -103,24 +118,24 @@ public class MainUIManager : MonoBehaviour
         mainMenu.gameObject.SetActive(false);
     }
 
-    public void retry()
+    public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void nope()
+    public void Nope()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
-    public void skip()
+    public void Skip()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
-    public void next()
+    public void Next()
     {
         assetsUsed.gameObject.SetActive(false);
 
@@ -129,7 +144,7 @@ public class MainUIManager : MonoBehaviour
         nextButton.gameObject.SetActive(false);
     }
 
-    public void ytnext()
+    public void Ytnext()
     {
         youtubeTuttorial.gameObject.SetActive(false);
 
@@ -138,7 +153,7 @@ public class MainUIManager : MonoBehaviour
         nextButton.gameObject.SetActive(false);
     }
 
-    public void musicnext()
+    public void Musicnext()
     {
         music.gameObject.SetActive(false);
 

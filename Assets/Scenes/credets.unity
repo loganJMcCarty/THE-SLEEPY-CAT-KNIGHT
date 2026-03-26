@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788985235}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: skip
+        m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2286,7 +2286,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788985235}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: next
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2800,6 +2800,10 @@ MonoBehaviour:
   music: {fileID: 1746964881}
   people: {fileID: 740324329}
   nextButton: {fileID: 1643592199}
+  startButton: {fileID: 0}
+  journy: {fileID: 0}
+  reset: {fileID: 0}
+  lastCheckPointPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1827257040
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,7 +2889,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788985235}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: ytnext
+        m_MethodName: Ytnext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3168,7 +3172,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788985235}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-        m_MethodName: musicnext
+        m_MethodName: Musicnext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
