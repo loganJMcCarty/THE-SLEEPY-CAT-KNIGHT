@@ -73,7 +73,7 @@ public class PlayerControl : MonoBehaviour
     {
         if(other.gameObject.tag == "Hit")
         {
-            health = health - 25;
+            health = health - 40;
         }
     }
 

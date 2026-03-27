@@ -68,6 +68,15 @@
                     "processors": "",
                     "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "menu",
+                    "type": "Button",
+                    "id": "bd9565df-cd52-49ce-879a-dacefaf1f1db",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -310,6 +319,17 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "790616e0-c291-4c02-b848-3c1d72525b8d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad;KeyboardMouse",
+                    "action": "menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
