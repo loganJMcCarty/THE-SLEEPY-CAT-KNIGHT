@@ -1053,7 +1053,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 78a8632522d9afe48ad84c5f57167edc, type: 3}
+  m_Resource: {fileID: 8300000, guid: d019186ab118706469d66b6fd9c86916, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2408,7 +2408,7 @@ MonoBehaviour:
     lexin_Music, MainMenu
 
 
-    VibeHorn, credits'
+    Soulfuljamtracks, credits'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

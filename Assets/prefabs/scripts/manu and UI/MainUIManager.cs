@@ -103,7 +103,7 @@ public class MainUIManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(3);
     }
-
+    //-----------------------------------------------------------
     public void GOBACKDEARGOD()
     {
         mainMenu.gameObject.SetActive(true);
@@ -117,7 +117,7 @@ public class MainUIManager : MonoBehaviour
 
         mainMenu.gameObject.SetActive(false);
     }
-
+    //---------------------------------------------------------
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -128,7 +128,7 @@ public class MainUIManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
-
+//----------------------------------------------------------
     public void Skip()
     {
         Time.timeScale = 1;
@@ -143,7 +143,7 @@ public class MainUIManager : MonoBehaviour
 
         nextButton.gameObject.SetActive(false);
     }
-
+    
     public void Ytnext()
     {
         youtubeTuttorial.gameObject.SetActive(false);
@@ -161,6 +161,7 @@ public class MainUIManager : MonoBehaviour
 
         nextButton.gameObject.SetActive(false);
     }
+    //-----------------------------------------------------------
     public void Exit()
     {
 #if UNITY_EDITOR

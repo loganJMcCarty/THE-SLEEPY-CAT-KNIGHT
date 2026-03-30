@@ -1,11 +1,13 @@
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseManager : MonoBehaviour
 {
     private StarterAssetsInputs inputs;
     private ThirdPersonController third;
     public GameObject settings;
+    public GameObject apply;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +19,8 @@ public class PauseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inputs.pause == true && settings.activeInHierarchy == false)
+        EventSystem.current.SetSelectedGameObject(apply);
+        if (inputs.pause == true && settings.activeInHierarchy == false)
         {
             settings.SetActive(true);
             Time.timeScale = 0;

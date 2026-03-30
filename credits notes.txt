@@ -20,7 +20,8 @@ Blackthornprod, how to make checkpoints in unity
 Thunder dev, make a health pickup
 music:
 lexin_Music
-vibehorn
+miyagisama
+soulfuljamtracks
 
 souds:
 DavidDumaisAudio, Sword slash
