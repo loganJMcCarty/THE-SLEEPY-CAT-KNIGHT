@@ -12,7 +12,7 @@ public class Setting : MonoBehaviour
 
     public Slider fbxSlider;
 
-    public static float sensitivity = 200f;
+    public static float sensitivity = 90f;
     public Transform playerBody;
 
     float xRotation = 0f;
@@ -22,7 +22,7 @@ public class Setting : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         if(masterSlider != null)
         {
             masterSlider.value = PreferencesManager.GetMasterVolume();
@@ -52,7 +52,7 @@ public class Setting : MonoBehaviour
         
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, 0f, 1f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
@@ -82,7 +82,7 @@ public class Setting : MonoBehaviour
 
    //--------------------------------------------------------------------
 
-    public void startnew()
+    public void Retreat()
     {
        Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);

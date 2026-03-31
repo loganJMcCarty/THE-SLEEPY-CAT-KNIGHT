@@ -10,6 +10,7 @@ TagManager:
   - player sword
   - Check
   - nextS
+  - Death
   layers:
   - Default
   - TransparentFX

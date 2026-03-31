@@ -1,10 +1,13 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
     public GameObject gameOverMenu;
+    public GameObject retry;
+    
 
     private void OnEnable()
     {
@@ -20,5 +23,7 @@ public class GameOver : MonoBehaviour
     public void EnableGameOverMenu()
     {
         gameOverMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(retry);
+       
     }
 }   

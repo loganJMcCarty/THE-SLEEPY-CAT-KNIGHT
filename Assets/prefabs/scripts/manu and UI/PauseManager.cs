@@ -19,9 +19,10 @@ public class PauseManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EventSystem.current.SetSelectedGameObject(apply);
+        
         if (inputs.pause == true && settings.activeInHierarchy == false)
         {
+            EventSystem.current.SetSelectedGameObject(apply);
             settings.SetActive(true);
             Time.timeScale = 0;
             third.enabled = false;

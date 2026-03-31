@@ -27,6 +27,7 @@ public class PlayerControl : MonoBehaviour
     public Animator animator;
 
     private PlayerInput playerInput;
+    private bool hasDed;
     //-------------------------------------------------------------
    
     
@@ -57,11 +58,11 @@ public class PlayerControl : MonoBehaviour
         healthText.text = health + " / " + health;
         healthBar.value = (float)health / (float)maxHealth;
         
-        if (health <= 0)
+        if (health <= 0 && hasDed == false)
         {
             healthBar.gameObject.SetActive(false);
             animator.SetBool("isDead" , true);
-
+            hasDed = true;
             //Destroy(gameObject, 7f);  //dont like this but keeping it just in case. 
             Debug.Log(" You are daed not big suprise");
             OnPlayerDeath?.Invoke();
@@ -75,7 +76,13 @@ public class PlayerControl : MonoBehaviour
         {
             health = health - 40;
         }
+        
+        if(other.gameObject.tag == "Death")
+        {
+            health = health - 9999;
+        }
     }
+
 
     public void Addhealth(int addedHealth)
     {
