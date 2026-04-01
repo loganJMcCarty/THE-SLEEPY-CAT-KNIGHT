@@ -22,7 +22,7 @@ public class Setting : MonoBehaviour
 
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked; not need but put put here just in case.
         if(masterSlider != null)
         {
             masterSlider.value = PreferencesManager.GetMasterVolume();
