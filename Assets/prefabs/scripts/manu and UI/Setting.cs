@@ -12,18 +12,19 @@ public class Setting : MonoBehaviour
 
     public Slider fbxSlider;
 
-    public static float sensitivity = 90f;
-    public Transform playerBody;
+    //public static float sensitivity = 1f;
+   // public Transform playerBody;
 
-    float xRotation = 0f;
+    
 
     
  
-
+   
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked; not need but put put here just in case.
-        if(masterSlider != null)
+        //object value = SetFloat("SensStored", PreferencesManager.GetSensStored());
+
+        if (masterSlider != null)
         {
             masterSlider.value = PreferencesManager.GetMasterVolume();
         }
@@ -39,23 +40,20 @@ public class Setting : MonoBehaviour
             fbxSlider.value = PreferencesManager.GetFpxVolume();
         }
     }
-
-    public void SensStored (float SensIndex)
+    //----------------------------------------
+   /* public void SensStored (float SensIndex)
     {
         sensitivity = SensIndex;
     }
-   
+    public void ChangeSensStored(float sensitivity)
+    {
+        
+        PreferencesManager.SetSensStored(sensitivity);
+    }*/
+
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
-        
-
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, 0f, 1f);
-
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+       
     }
 
     //------------------------------------------------------------

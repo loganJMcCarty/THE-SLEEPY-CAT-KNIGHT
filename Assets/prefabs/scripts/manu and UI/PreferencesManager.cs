@@ -32,5 +32,13 @@ public static class PreferencesManager
         PlayerPrefs.SetFloat("SfxVolume", soundlevel);
     }
 
-
+    /*public static float GetSensStored()
+    {
+       return PlayerPrefs.GetFloat("SensStored", 1);
+    }
+    
+    public static void SetSensStored(float sensitivity)
+    {
+        PlayerPrefs.SetFloat("SensStored", sensitivity);
+    }*/
 }
