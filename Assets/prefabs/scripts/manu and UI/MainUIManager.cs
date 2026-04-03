@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -26,6 +29,15 @@ public class MainUIManager : MonoBehaviour
     public GameObject journy;
 
     public GameObject reset;
+//-------------------------------------
+    public GameObject cutscene;
+    public Image imageStart;
+    public Image imagetextStart;
+    public Image imageEnd;
+    public Image imagetextEnd;
+    public TMP_Text textStart;
+    public TMP_Text textEnd;
+    public GameObject startcut;
 
    // -------------------------------------
 
@@ -102,6 +114,11 @@ public class MainUIManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(3);
+    }
+
+    public void Begin()
+    {
+
     }
     //-----------------------------------------------------------
     public void GOBACKDEARGOD()
