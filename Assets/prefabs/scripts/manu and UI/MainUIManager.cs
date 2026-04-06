@@ -32,11 +32,9 @@ public class MainUIManager : MonoBehaviour
 //-------------------------------------
     public GameObject cutscene;
     public Image imageStart;
-    public Image imagetextStart;
-    public Image imageEnd;
-    public Image imagetextEnd;
-    public TMP_Text textStart;
-    public TMP_Text textEnd;
+    
+    //public Image imageEnd;
+   
     public GameObject startcut;
 
    // -------------------------------------
@@ -100,6 +98,13 @@ public class MainUIManager : MonoBehaviour
         reset.gameObject.SetActive(true);
 
         startButton.gameObject.SetActive(false);
+    }
+
+    public void StartCut()
+    {
+        cutscene.gameObject.SetActive(true);
+        startcut.gameObject.SetActive(true);
+
     }
 
     // for the button settings not the in game settings
