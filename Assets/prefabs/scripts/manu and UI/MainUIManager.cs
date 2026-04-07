@@ -77,8 +77,10 @@ public class MainUIManager : MonoBehaviour
         
         SaveSystem.DeletePlayerData();
         Time.timeScale = 1;
-        SceneManager.LoadScene(1);
-
+        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
+        cutscene.gameObject.SetActive(true);
+        //startcut.gameObject.SetActive(true);
     }
 
     public void Resume()
@@ -104,6 +106,7 @@ public class MainUIManager : MonoBehaviour
     {
         cutscene.gameObject.SetActive(true);
         startcut.gameObject.SetActive(true);
+        mainMenu.gameObject.SetActive(false);
 
     }
 

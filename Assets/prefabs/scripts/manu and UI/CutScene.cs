@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
@@ -35,12 +36,12 @@ public class CutScene : MonoBehaviour
     
     //-----------------------------
     public TMP_Text text1;
-    public TMP_Text text2;
+    //public TMP_Text text2;
     public TMP_Text text3;
     public TMP_Text text4;
-    public TMP_Text text5;
+    //public TMP_Text text5;
     public TMP_Text text6;
-    public TMP_Text text7;
+    //public TMP_Text text7;
     public TMP_Text text8;
     public TMP_Text text9;
     public TMP_Text text10;
@@ -61,7 +62,7 @@ public class CutScene : MonoBehaviour
     public GameObject NextText12;
     public GameObject NextText13;
     public GameObject NextText14;
-    public GameObject NextText15;
+    
    //----------------------------
 
     public void Nexttext1()
@@ -74,75 +75,89 @@ public class CutScene : MonoBehaviour
 
     public void Nexttext2()
     {
-        NextText2.gameObject.SetActive(false);
-        text2.gameObject.SetActive(true);
+        image2.gameObject.SetActive(true);
+        image1.gameObject.SetActive(false);
         NextText3.gameObject.SetActive(true);
+        NextText2.gameObject.SetActive(false);
+        text1.gameObject.SetActive(false);
+        text3.gameObject.SetActive(true);
+        
     }
 
     public void Nexttext3()
     {
-        image1.gameObject.SetActive(false);
-        image2.gameObject.SetActive(true);
+       
+         image2.gameObject.SetActive(false);
+        image3 .gameObject.SetActive(true);
+        NextText4.gameObject.SetActive(true);
         NextText3.gameObject.SetActive(false);
         imagetext1.gameObject.SetActive(false);
         imagetext2.gameObject.SetActive(true);
-        text3.gameObject.SetActive(false);
-        NextText4.gameObject.SetActive(true);
+        text4.gameObject.SetActive(true);
+
+        
 
     }
 
     public void Nexttext4()
     {
-        image2.gameObject.SetActive(false);
-        image3.gameObject.SetActive(true);
+        image4.gameObject.SetActive(true);
+        image3.gameObject.SetActive(false);
         NextText4.gameObject.SetActive(false);
         imagetext2.gameObject.SetActive(false);
         imagetext3.gameObject.SetActive(true);
-        text4.gameObject.SetActive(true);
+        text4 .gameObject.SetActive(false);
+        text6.gameObject.SetActive(true);
         NextText5.gameObject.SetActive(true);
     }
 
     public void Nexttext5()
     {
+        image4 .gameObject.SetActive(false);
+        image5 .gameObject.SetActive(true); 
         NextText5.gameObject.SetActive(false);
-        text5 .gameObject.SetActive(true);
+        text8 .gameObject.SetActive(true);
+        text6 .gameObject.SetActive(false);
         NextText6.gameObject.SetActive(true);
 
     }
 
     public void Nexttext6()
     {
-        image3 .gameObject.SetActive(false);
-        image4 .gameObject.SetActive(true);
+       
+        
         NextText6.gameObject.SetActive(false);
         imagetext3.gameObject.SetActive(false);
         imagetext4.gameObject.SetActive(true);
-        text6.gameObject.SetActive(true);
+        text8.gameObject.SetActive(false);
+        text9.gameObject.SetActive(true);
         NextText7.gameObject.SetActive(true);
     }
 
     public void Nexttext7()
     {
         NextText7.gameObject.SetActive(false);
-        text7 .gameObject.SetActive(true);
+        text9 .gameObject.SetActive(false);
+        text10 .gameObject.SetActive(true);
         NextText8 .gameObject.SetActive(true);
     }
 
     public void Nexttext8()
     {
-        image4 .gameObject.SetActive(false);
-        image5 .gameObject.SetActive(true);
+         image5 .gameObject.SetActive(false);
+        image6 .gameObject.SetActive(true);
         NextText8.gameObject.SetActive(false);
         imagetext4.gameObject.SetActive(false);
         imagetext5.gameObject.SetActive(true);
-        text8.gameObject.SetActive(true);
+        text10.gameObject.SetActive(false);
+        text11.gameObject.SetActive(true);
         NextText9.gameObject.SetActive(true);
     }
 
     public void Nexttext9()
     {
-        image5 .gameObject.SetActive(false);
-        image6 .gameObject.SetActive(true);
+       image6 .gameObject.SetActive(false);
+        image7 .gameObject.SetActive(true);
         NextText9.gameObject.SetActive(false);
         imagetext5.gameObject.SetActive(false);
         imagetext6.gameObject.SetActive(true);
@@ -152,8 +167,8 @@ public class CutScene : MonoBehaviour
 
     public void Nexttext10()
     {
-        image6 .gameObject.SetActive(false);
-        image7 .gameObject.SetActive(true);
+        image7 .gameObject.SetActive(false);
+        image8 .gameObject.SetActive(true);
         NextText10.gameObject.SetActive(false);
         imagetext6 .gameObject.SetActive(false);
         imagetext7 .gameObject.SetActive(true);
@@ -163,8 +178,8 @@ public class CutScene : MonoBehaviour
 
     public void Nexttext11()
     {
-        image7 .gameObject.SetActive(false);
-        image8 .gameObject.SetActive(true);
+        image8 .gameObject.SetActive(false);
+        image9 .gameObject.SetActive(true);
         NextText11.gameObject.SetActive(false);
         imagetext7.gameObject.SetActive(false);
         imagetext8.gameObject.SetActive(true);
@@ -174,8 +189,8 @@ public class CutScene : MonoBehaviour
 
     public void Nexttext12()
     {
-        image8 .gameObject.SetActive(false);
-        image9 .gameObject.SetActive(true);
+        image9 .gameObject.SetActive(false);
+        image10 .gameObject.SetActive(true);
         imagetext8.gameObject.SetActive(false);
         NextText12.gameObject.SetActive(false);
         NextText13.gameObject.SetActive(true);
@@ -183,28 +198,22 @@ public class CutScene : MonoBehaviour
 
     public void Nexttext13()
     {
-        image9 .gameObject.SetActive(false);
-        image10 .gameObject.SetActive(true);
+        image10 .gameObject.SetActive(false);
+        image11 .gameObject.SetActive(true);
         NextText13.gameObject.SetActive(false);
         NextText14 .gameObject.SetActive(true);
     }
 
     public void Nexttext14()
     {
-        image10 .gameObject.SetActive(false);
-        image11 .gameObject.SetActive(true);
-        NextText14.gameObject.SetActive(false);
-        NextText15.gameObject.SetActive(true);
-    }
-
-    public void Nexttext15()
-    {
         image11 .gameObject.SetActive(false);
         image12 .gameObject.SetActive(true);
-        NextText15.gameObject.SetActive(false);
+        NextText14.gameObject.SetActive(false);
         imagetext9.gameObject.SetActive(true);
         text12 .gameObject.SetActive(true);
     }
+
+    
 
     
 
