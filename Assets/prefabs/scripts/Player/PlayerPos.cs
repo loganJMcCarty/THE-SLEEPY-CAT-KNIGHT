@@ -7,6 +7,7 @@ public class PlayerPos : MonoBehaviour
 
     private CheckPoint check;
     private NextStage nextS;
+    private EndGame endgame;
     private MainUIManager MainUIManager;
     bool retry;
     
@@ -18,6 +19,7 @@ public class PlayerPos : MonoBehaviour
         
         nextS = GameObject.FindGameObjectWithTag("nextS").GetComponent<NextStage>();// prob tag
         transform.position = check.lastCheckPointPos;
+        //endgame = GameObject.FindGameObjectWithTag("endgame").GetComponent<EndGame>();
     }
 
     // Update is called once per frame

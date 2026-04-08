@@ -894,6 +894,9 @@ MonoBehaviour:
   startButton: {fileID: 0}
   journy: {fileID: 0}
   reset: {fileID: 0}
+  cutscene: {fileID: 0}
+  imageStart: {fileID: 0}
+  startcut: {fileID: 0}
   lastCheckPointPos: {x: 0, y: 0, z: 0}
 --- !u!114 &3551549919921947725
 MonoBehaviour:
@@ -3745,8 +3748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.9, y: -15}
-  m_SizeDelta: {x: 96.0211, y: 68.3875}
+  m_AnchoredPosition: {x: 0.0237, y: -14.6}
+  m_SizeDelta: {x: 103.7509, y: 97.5872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4991653592416378151
 CanvasRenderer:
@@ -3778,18 +3781,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 42
-    m_FontStyle: 3
+    m_FontSize: 35
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '"E"'
+  m_Text: '"HIT"
+
+    IT'
 --- !u!1 &8365429752057428213
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,7 +4906,7 @@ PrefabInstance:
       objectReference: {fileID: 7045687013188144626}
     - target: {fileID: 2168959376165086822, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_VersionIndex
-      value: 1649
+      value: 1646
       objectReference: {fileID: 0}
     - target: {fileID: 2902199118626374446, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: animator
@@ -4969,7 +4974,7 @@ PrefabInstance:
       objectReference: {fileID: 416879294414278462}
     - target: {fileID: 6929501816754861346, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_VersionIndex
-      value: 1649
+      value: 1646
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -11,6 +11,7 @@ TagManager:
   - Check
   - nextS
   - Death
+  - endgame
   layers:
   - Default
   - TransparentFX
