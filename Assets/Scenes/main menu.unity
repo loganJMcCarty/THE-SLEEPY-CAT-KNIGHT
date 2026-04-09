@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_text: 'why in all the realms doesthis keep happining to me.
 
     (..bet its that
-    natarater again..)'
+    narrator again..)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -2931,7 +2931,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: only a child could make such a Fantastical world of dreams, Not even I
-    can expect waht we will experence lest see wahat are hero is shall we?
+    can expect what we will experence let's see what are hero is doing shall we?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -4853,7 +4853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Skellys growing and being a pain)
+  m_text: (Skellys growling and being a pain)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -7595,7 +7595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But Dreams are were the real chaos can truly happon espisilly with a good
+  m_text: But Dreams are were the real chaos can truly happon espesilly with a good
     imagination.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -7735,7 +7735,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Well cant leve them walk around can I?
 
-    I''ll at leat get some cardeo
+    I''ll at least get some cardeo
     in.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
