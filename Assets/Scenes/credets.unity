@@ -2408,7 +2408,11 @@ MonoBehaviour:
     lexin_Music, MainMenu
 
 
-    Soulfuljamtracks, credits'
+    Soulfuljamtracks, credits
+
+
+    Miyagisama,
+    end music'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2815,6 +2819,9 @@ MonoBehaviour:
   startButton: {fileID: 0}
   journy: {fileID: 0}
   reset: {fileID: 0}
+  cutscene: {fileID: 0}
+  imageStart: {fileID: 0}
+  startcut: {fileID: 0}
   lastCheckPointPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1827257040
 GameObject:
