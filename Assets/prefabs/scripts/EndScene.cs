@@ -32,7 +32,7 @@ public class EndScene : MonoBehaviour
     //public Image imagetext7;
     public Image imagetext8;
     public Image imagetext9;
-
+    public Image imagetext10;
     //-----------------------------
     public TMP_Text text1;
     public TMP_Text text2;
@@ -40,7 +40,7 @@ public class EndScene : MonoBehaviour
     public TMP_Text text4;
     public TMP_Text text5;
     public TMP_Text text6;
-    //public TMP_Text text7;
+    public TMP_Text text7;
     public TMP_Text text8;
     public TMP_Text text9;
     public TMP_Text text10;
@@ -95,4 +95,93 @@ public class EndScene : MonoBehaviour
         text3.gameObject.SetActive(true);
     }
 
+    public void Nexttext4()
+    {
+        image5.gameObject.SetActive(true);
+        image4.gameObject.SetActive(false);
+        NextText5.gameObject.SetActive(true);
+        NextText4.gameObject.SetActive(false);
+        imagetext5.gameObject.SetActive(false);
+        imagetext4.gameObject.SetActive(true);
+        text3.gameObject.SetActive(false);
+        text4.gameObject.SetActive(true);
+    }
+
+    public void Nexttext5()
+    {
+        image6.gameObject.SetActive(true);
+        image5.gameObject.SetActive(false);
+        NextText6.gameObject.SetActive(true);
+        NextText5.gameObject.SetActive(false);
+        imagetext6.gameObject.SetActive(false);
+        imagetext5.gameObject.SetActive(true);
+        text4.gameObject.SetActive(false);
+        text5.gameObject.SetActive(true);
+    }
+
+    public void Nexttext6()
+    {
+        image7.gameObject.SetActive(true);
+        image6.gameObject.SetActive(false);
+        NextText7.gameObject.SetActive(true);
+        NextText6.gameObject.SetActive(false);
+        imagetext5.gameObject.SetActive(false);
+        imagetext6.gameObject.SetActive(true);
+        text5.gameObject.SetActive(false);
+        text6.gameObject.SetActive(true);
+    }
+
+    public void Nexttext7()
+    {
+        image8.gameObject.SetActive(true);
+        image7.gameObject.SetActive(false);
+        NextText8.gameObject.SetActive(true);
+        NextText7.gameObject.SetActive(false);
+        imagetext6.gameObject.SetActive(false);
+        
+        text6.gameObject.SetActive(false);
+        
+    }
+
+    public void Nexttext8()
+    {
+        image9.gameObject.SetActive(true);
+        image8.gameObject.SetActive(false);
+        NextText8.gameObject.SetActive(true);
+        NextText7.gameObject.SetActive(false);
+        imagetext8.gameObject.SetActive(true);
+        
+        text8.gameObject.SetActive(true);
+        
+    }
+
+    public void Nexttext9()
+    {
+        image10.gameObject.SetActive(true);
+        image9.gameObject.SetActive(false);
+        NextText9.gameObject.SetActive(true);
+        NextText8.gameObject.SetActive(false);
+        imagetext9.gameObject.SetActive(true);
+        imagetext8.gameObject.SetActive(false);
+        text9.gameObject.SetActive(true);
+        text8.gameObject.SetActive(false);
+    }
+
+    public void Nexttext10()
+    {
+        image11.gameObject.SetActive(true);
+        image10.gameObject.SetActive(false);
+        NextText10.gameObject.SetActive(true);
+        NextText9.gameObject.SetActive(false);
+        imagetext10.gameObject.SetActive(true);
+        imagetext9.gameObject.SetActive(false);
+        text10.gameObject.SetActive(true);
+        text9.gameObject.SetActive(false);
+    }
+
+    public void Tothemenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(3);
+    }
 }

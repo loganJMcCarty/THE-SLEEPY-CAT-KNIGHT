@@ -189,6 +189,7 @@ RectTransform:
   m_Children:
   - {fileID: 1783653404}
   - {fileID: 1867857889}
+  - {fileID: 1328158864}
   m_Father: {fileID: 738776401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1120,25 +1121,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Tothemenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
-        m_MethodName: SetSelectedGameObject
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1926,9 +1915,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1938,12 +1927,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 978611343}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2148,9 +2137,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2160,12 +2149,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1169610254}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2368,9 +2357,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2380,12 +2369,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 172143862}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2500,12 +2489,14 @@ MonoBehaviour:
   imagetext6: {fileID: 1610335079}
   imagetext8: {fileID: 252439375}
   imagetext9: {fileID: 1263810677}
+  imagetext10: {fileID: 827824946}
   text1: {fileID: 1867857890}
   text2: {fileID: 1208085190}
   text3: {fileID: 760785381}
   text4: {fileID: 54067166}
   text5: {fileID: 129303424}
   text6: {fileID: 268042326}
+  text7: {fileID: 0}
   text8: {fileID: 42499641}
   text9: {fileID: 1230788727}
   text10: {fileID: 2051435110}
@@ -2598,7 +2589,6 @@ RectTransform:
   - {fileID: 1545744801}
   - {fileID: 587740607}
   - {fileID: 20396352}
-  - {fileID: 1328158864}
   - {fileID: 837491379}
   - {fileID: 877141740}
   - {fileID: 588259751}
@@ -3172,9 +3162,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3184,12 +3174,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 632195528}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3316,9 +3306,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3328,12 +3318,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1913391616}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3852,15 +3842,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328158863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
-  m_LocalScale: {x: 3.8621676, y: 3.8621676, z: 3.8621676}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1872863}
+  m_LocalScale: {x: 0.28749526, y: 0.36166003, z: 0.36166003}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 738776401}
+  m_Father: {fileID: 20396352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 537, y: -364}
+  m_AnchoredPosition: {x: 39.973724, y: -33.804626}
   m_SizeDelta: {x: 32.20554, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328158865
@@ -4252,7 +4242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1328158863}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1545744801
@@ -4714,9 +4704,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutScene, Assembly-CSharp
-        m_MethodName: Nexttext1
+      - m_Target: {fileID: 738776397}
+        m_TargetAssemblyTypeName: EndScene, Assembly-CSharp
+        m_MethodName: Nexttext9
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4726,12 +4716,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1545744800}
         m_TargetAssemblyTypeName: UnityEngine.EventSystems.EventSystem, UnityEngine.UI
         m_MethodName: SetSelectedGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 710311504}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
