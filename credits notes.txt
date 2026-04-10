@@ -25,5 +25,6 @@ soulfuljamtracks
 
 souds:
 DavidDumaisAudio, Sword slash
+soundreality,explosion
 
 freesound_community, Knight footstep

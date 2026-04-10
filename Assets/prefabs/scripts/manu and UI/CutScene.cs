@@ -60,8 +60,8 @@ public class CutScene : MonoBehaviour
     public GameObject NextText10;
     public GameObject NextText11;
     public GameObject NextText12;
-    
-    
+   //--------------------------------    
+ 
    //----------------------------
 
     public void Nexttext1()
