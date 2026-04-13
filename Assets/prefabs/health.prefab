@@ -5790,6 +5790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthPickup
   destroyOnInteract: 1
   health: 80
+  clip: {fileID: 0}
 --- !u!1 &4319538301723144263
 GameObject:
   m_ObjectHideFlags: 0

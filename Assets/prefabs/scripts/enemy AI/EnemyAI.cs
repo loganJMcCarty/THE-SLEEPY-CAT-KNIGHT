@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour
     private Animator anim;
     private float distanceToTarget;
     Coroutine idleToPatrol;
-
+    
     
 
     private void Start()

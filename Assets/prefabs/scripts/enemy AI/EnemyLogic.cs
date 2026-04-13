@@ -11,6 +11,7 @@ public class EnemyLogic : MonoBehaviour
     public Animator animator;
     private EnemyAI enemyAI;
     private NavMeshAgent navMeshAgent;
+    private AudioSource audioSource;
 
     bool isDead;
 
@@ -19,6 +20,7 @@ public class EnemyLogic : MonoBehaviour
     {
         enemyAI = GetComponent<EnemyAI>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class EnemyLogic : MonoBehaviour
             navMeshAgent.SetDestination(transform.position);
             navMeshAgent.enabled = false;
             //Destroy(gameObject, 7f);
-           
+           audioSource.enabled = false;
         }
     }
 

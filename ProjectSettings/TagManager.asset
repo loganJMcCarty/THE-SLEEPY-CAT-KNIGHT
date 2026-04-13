@@ -12,6 +12,8 @@ TagManager:
   - nextS
   - Death
   - endgame
+  - birge
+  - key
   layers:
   - Default
   - TransparentFX

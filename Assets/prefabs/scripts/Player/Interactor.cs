@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private KeyCode interactKey = KeyCode.E;
     [SerializeField] private GameObject interactText;
     [SerializeField] private GameObject key;
+    
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class Interactor : MonoBehaviour
 
         if (Interacting && control.healthText)
             Interact();
+        
     }
 
     private void Interact()

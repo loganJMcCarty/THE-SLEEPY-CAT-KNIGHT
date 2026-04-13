@@ -2113,6 +2113,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 862b2579f05ba464db1287d2e239c946, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (4)
@@ -8555,6 +8559,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1231346523}
     m_Modifications:
+    - target: {fileID: 2793482482605588941, guid: ad39c6c6223bccb4ea4a1bff175f3dfe, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 1037478492}
     - target: {fileID: 4179286240704311608, guid: ad39c6c6223bccb4ea4a1bff175f3dfe, type: 3}
       propertyPath: m_Name
       value: health
@@ -13133,6 +13141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b27480b1532cd104b839f546921680a0, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (2)
@@ -13241,6 +13253,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b038f7632e9eaa4d8d2d110c6f748e8, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (1)
@@ -13426,6 +13442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 23c6e815c31c6a1438a2b116f6378a45, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (16)
@@ -18215,6 +18235,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e4b2c8e9cc7f73b48bb3472b5ae7b323, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (20)
@@ -44099,6 +44123,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b038f7632e9eaa4d8d2d110c6f748e8, type: 2}
+    - target: {fileID: 5848883294575767628, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c82211ba2fcb4c94fbf3cd9857ab4af7, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (13)
@@ -45054,6 +45086,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5149533179650245462, guid: 42419eff3b9a6264380b5a7b0da1b29f, type: 3}
   m_PrefabInstance: {fileID: 196898721}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1037478492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8743847898457665360, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
+  m_PrefabInstance: {fileID: 2647692034523916762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1037502888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45367,6 +45404,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f2a8c2751e0440d468cd7f286f08db93, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (15)
@@ -56892,6 +56933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e91a871226f579f49974eef224252226, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (11)
@@ -59039,6 +59084,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b15c0f35ee688b4da2d24159b585779, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (8)
@@ -59286,6 +59335,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8493875ce2778f541a1318dabbaf35fe, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (19)
@@ -67994,6 +68047,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8493875ce2778f541a1318dabbaf35fe, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (17)
@@ -69825,6 +69882,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 58b208588a7f7cc4d979f514cd9d07e1, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (10)
@@ -79475,6 +79536,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b15c0f35ee688b4da2d24159b585779, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (12)
@@ -80828,6 +80893,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b038f7632e9eaa4d8d2d110c6f748e8, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (6)
@@ -82430,6 +82499,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b16d7c7c33412864e8c4a3221967364b, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (7)
@@ -88438,6 +88511,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f022ca26c164a2648ae07d33b222a037, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (5)
@@ -96650,6 +96727,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 208420154809942538, guid: 2a75e0892e1be5b4096b6784fad4c2cb, type: 3}
   m_PrefabInstance: {fileID: 831531741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2131519829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131519831}
+  - component: {fileID: 2131519830}
+  m_Layer: 0
+  m_Name: brige trigger
+  m_TagString: birge
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &2131519830
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131519829}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 7.15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2131519831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131519829}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.52, y: 1.1239, z: 60.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2132651795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96658,6 +96788,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846837557}
     m_Modifications:
+    - target: {fileID: 5603622438999235917, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e91a871226f579f49974eef224252226, type: 2}
     - target: {fileID: 7395808269725357589, guid: 664d902101f4fa242bd98198dc11a181, type: 3}
       propertyPath: m_Name
       value: undead skelly (14)
@@ -97163,7 +97297,7 @@ PrefabInstance:
       objectReference: {fileID: 1484539285}
     - target: {fileID: 4154076142370778639, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1652
+      value: 1661
       objectReference: {fileID: 0}
     - target: {fileID: 5158035552496598347, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
@@ -97171,7 +97305,7 @@ PrefabInstance:
       objectReference: {fileID: 648691479}
     - target: {fileID: 5158035552496598347, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1652
+      value: 1661
       objectReference: {fileID: 0}
     - target: {fileID: 6350571756888180923, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
@@ -97516,3 +97650,4 @@ SceneRoots:
   - {fileID: 702769279}
   - {fileID: 5698027687370948634}
   - {fileID: 1231346523}
+  - {fileID: 2131519831}

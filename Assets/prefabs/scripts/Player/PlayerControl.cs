@@ -16,8 +16,8 @@ public class PlayerControl : MonoBehaviour
 
     public TMP_Text healthText;
 
-    public GameObject key;
 
+   // public AudioSource ow;
     
 
     public int health = 100;
@@ -29,12 +29,14 @@ public class PlayerControl : MonoBehaviour
     private PlayerInput playerInput;
     private bool hasDed;
     //-------------------------------------------------------------
+     public GameObject brige;
    
-    
+    public GameObject key;
     //---------------------------------------------------------------
     private void OnEnable()
     {
         OnPlayerDeath += DisablePlayerMovement;
+        
     }
 
     private void OnDisable()
@@ -48,6 +50,7 @@ public class PlayerControl : MonoBehaviour
         health = (Player.instance != null)?Player.instance.health: 250;
         maxHealth = health;
         playerInput = GetComponent<PlayerInput>();
+        //ow =GetComponent<AudioSource>();
         EnabledPlayerMovement();
         
     }
@@ -72,14 +75,25 @@ public class PlayerControl : MonoBehaviour
     //to be able to take dammage
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Hit")
+        if (other.gameObject.tag == "Hit")
         {
             health = health - 40;
+            //ow.enabled = true;
         }
-        
-        if(other.gameObject.tag == "Death")
+
+        if (other.gameObject.tag == "Death")
         {
             health = health - 9999;
+        }
+
+        if (other.gameObject.tag == "birge")
+        {
+            brige.gameObject.SetActive(true);
+        }
+
+        if (other.gameObject.tag == "key")
+        {
+            key.gameObject.SetActive(true);
         }
     }
 
@@ -105,4 +119,8 @@ public class PlayerControl : MonoBehaviour
         playerInput.ActivateInput();
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+  
+
+
 }
