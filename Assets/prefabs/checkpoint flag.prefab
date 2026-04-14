@@ -774,7 +774,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1954
+  m_VersionIndex: 1957
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -819,7 +819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 792951808200871590}
   - component: {fileID: 7986420769833680103}
-  - component: {fileID: 739960704690933520}
+  - component: {fileID: 2187569922525643499}
   m_Layer: 0
   m_Name: checkpoint flag
   m_TagString: Untagged
@@ -862,8 +862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb57579ffcd5bc24485718646bcff0ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!135 &739960704690933520
-SphereCollider:
+--- !u!65 &2187569922525643499
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -881,8 +881,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 3.3016706
-  m_Center: {x: 2.0908751, y: -0.66920805, z: 0}
+  m_Size: {x: 5.73, y: 4.33, z: 6.4}
+  m_Center: {x: 2.07, y: 0, z: 0}
 --- !u!1 &3886959339972256109
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,9 +16,9 @@ public class PlayerPos : MonoBehaviour
     void Start()
     {
         check =CheckPoint.instance;
+        transform.position = check.lastCheckPointPos;
         
         nextS = GameObject.FindGameObjectWithTag("nextS").GetComponent<NextStage>();// prob tag
-        transform.position = check.lastCheckPointPos;
         //endgame = GameObject.FindGameObjectWithTag("endgame").GetComponent<EndGame>();
     }
 

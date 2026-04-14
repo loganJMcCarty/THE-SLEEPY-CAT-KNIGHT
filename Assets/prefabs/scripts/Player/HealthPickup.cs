@@ -10,18 +10,10 @@ public class HealthPickup : Interacable
         PlayerArmature.GetComponent<PlayerControl>().Addhealth(health);
         
         base.Interact(PlayerArmature);
+        if(clip != null)   
+            clip.gameObject.SetActive(true);
 
-        clip.gameObject.SetActive(true);
-        
     }
 
-    /*public void OnEnable()
-    {
-        Invoke(nameof(Deatevate), 5f);
-    }
 
-    public void Deatevate()
-    {
-        clip.gameObject.SetActive(false);
-    }*/
 }

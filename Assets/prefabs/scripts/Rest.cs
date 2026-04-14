@@ -11,7 +11,7 @@ public class Rest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            check.lastCheckPointPos = transform.position; // prob intsance
+            check.lastCheckPointPos = transform.position; 
             Player.instance.position[0] = transform.position.x;
             Player.instance.position[1] = transform.position.y;
             Player.instance.position[2] = transform.position.z;

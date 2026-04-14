@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class KeyPickup : Interacable
 {
+    public GameObject ow;
     [SerializeField] private GameObject key;
     [SerializeField] private int health = (int)-50f;
     public override void Interact(GameObject PlayerArmature)
@@ -10,5 +11,6 @@ public class KeyPickup : Interacable
         PlayerArmature.GetComponent<PlayerControl>().Addhealth(health);
 
         base.Interact(PlayerArmature);
+        ow.gameObject.SetActive(true);
     }
 }

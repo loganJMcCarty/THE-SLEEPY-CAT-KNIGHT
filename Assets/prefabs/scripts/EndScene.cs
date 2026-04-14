@@ -58,7 +58,12 @@ public class EndScene : MonoBehaviour
     public GameObject NextText10;
     public GameObject TotheMenu;
     //----------------------------
-
+    
+    //----------------------------
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void Nexttext1()
     {
         image2.gameObject.SetActive(true);

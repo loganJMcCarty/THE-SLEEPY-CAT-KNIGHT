@@ -16,10 +16,6 @@ public class PlayerControl : MonoBehaviour
 
     public TMP_Text healthText;
 
-
-   // public AudioSource ow;
-    
-
     public int health = 100;
 
     public int maxHealth = 0;
@@ -29,8 +25,8 @@ public class PlayerControl : MonoBehaviour
     private PlayerInput playerInput;
     private bool hasDed;
     //-------------------------------------------------------------
-     public GameObject brige;
-   
+    public GameObject brige;
+    
     public GameObject key;
     //---------------------------------------------------------------
     private void OnEnable()
@@ -78,7 +74,7 @@ public class PlayerControl : MonoBehaviour
         if (other.gameObject.tag == "Hit")
         {
             health = health - 40;
-            //ow.enabled = true;
+            
         }
 
         if (other.gameObject.tag == "Death")
