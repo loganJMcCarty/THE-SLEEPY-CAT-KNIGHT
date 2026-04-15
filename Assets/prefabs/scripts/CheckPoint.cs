@@ -17,6 +17,7 @@ public class CheckPoint : MonoBehaviour
             Destroy(gameObject);
         }
         lastCheckPointPos = new Vector3(Player.instance.position[0], Player.instance.position[1], Player.instance.position[2]);
+        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
