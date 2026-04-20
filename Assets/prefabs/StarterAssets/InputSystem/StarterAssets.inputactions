@@ -214,6 +214,17 @@
                 },
                 {
                     "name": "",
+                    "id": "bc6061ca-d0a8-4433-818d-9a47dfa4d75a",
+                    "path": "<Touchscreen>/primaryTouch/radius",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";toutch",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1bd55a0b-761e-4ae4-89ae-8ec127e08a29",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -324,6 +335,17 @@
                 },
                 {
                     "name": "",
+                    "id": "bd55f490-6163-447d-88d9-eab381b3236c",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";toutch",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "790616e0-c291-4c02-b848-3c1d72525b8d",
                     "path": "",
                     "interactions": "",
@@ -411,6 +433,17 @@
             "name": "PS4 Controller",
             "bindingGroup": "PS4 Controller",
             "devices": []
+        },
+        {
+            "name": "toutch",
+            "bindingGroup": "toutch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }
