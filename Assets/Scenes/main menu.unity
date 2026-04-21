@@ -6049,6 +6049,7 @@ MonoBehaviour:
   masterSlider: {fileID: 948389836912900739}
   musicSlider: {fileID: 3233489451363293229}
   fbxSlider: {fileID: 135874046647390680}
+  senitivity: {fileID: 0}
 --- !u!114 &1180211334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12801,15 +12802,15 @@ RectTransform:
   m_GameObject: {fileID: 1567292732273417527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.1367, y: 5.1367, z: 5.1367}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4958585813884364150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.2306, y: -7.8074}
-  m_SizeDelta: {x: 1947.012, y: 1132.8097}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -2.2306519, y: -7.8073883}
+  m_SizeDelta: {x: 1971.012, y: 1178.8097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6422180202880893130
 GameObject:

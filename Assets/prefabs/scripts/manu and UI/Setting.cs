@@ -12,7 +12,7 @@ public class Setting : MonoBehaviour
 
     public Slider fbxSlider;
 
-    //public static float sensitivity = 1f;
+    public Slider senitivity;
    // public Transform playerBody;
 
     
@@ -23,6 +23,10 @@ public class Setting : MonoBehaviour
     void Start()
     {
         //object value = SetFloat("SensStored", PreferencesManager.GetSensStored());
+        if (senitivity != null)
+        {
+            senitivity.value = PreferencesManager.GetSenitivity();
+        }
 
         if (masterSlider != null)
         {
@@ -41,15 +45,12 @@ public class Setting : MonoBehaviour
         }
     }
     //----------------------------------------
-   /* public void SensStored (float SensIndex)
-    {
-        sensitivity = SensIndex;
-    }
-    public void ChangeSensStored(float sensitivity)
+    
+    public void ChangeSenitivity(float sensitivity)
     {
         
-        PreferencesManager.SetSensStored(sensitivity);
-    }*/
+        PreferencesManager.SetSenitivity(sensitivity);
+    }
 
     void Update()
     {

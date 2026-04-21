@@ -34324,6 +34324,7 @@ MonoBehaviour:
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   fbxSlider: {fileID: 0}
+  senitivity: {fileID: 0}
 --- !u!1001 &704656259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97248,7 +97249,7 @@ PrefabInstance:
       objectReference: {fileID: 1484539285}
     - target: {fileID: 4154076142370778639, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1667
+      value: 1691
       objectReference: {fileID: 0}
     - target: {fileID: 5158035552496598347, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
@@ -97256,36 +97257,16 @@ PrefabInstance:
       objectReference: {fileID: 648691479}
     - target: {fileID: 5158035552496598347, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_VersionIndex
-      value: 1667
-      objectReference: {fileID: 0}
-    - target: {fileID: 6103831442406759250, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Nope
+      value: 1691
       objectReference: {fileID: 0}
     - target: {fileID: 6350571756888180923, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 648691479}
-    - target: {fileID: 6372306484753141120, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
-      propertyPath: look.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6372306484753141120, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
-      propertyPath: look.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7924432082846503572, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1484539285}
-    - target: {fileID: 8553488089971842166, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
-      propertyPath: joystickRange
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553488089971842166, guid: e324fc90ea433e24a84a42322d06a87e, type: 3}
-      propertyPath: magnitudeMultiplier
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

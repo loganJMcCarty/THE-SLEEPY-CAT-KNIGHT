@@ -31,14 +31,14 @@ namespace StarterAssets
 
         public void OnMove(InputValue value)
 		{
-			MoveInput(value.Get<Vector2>());
+			MoveInput(value.Get<Vector2>().normalized);
 		}
 
 		public void OnLook(InputValue value)
 		{
 			if(cursorInputForLook)
 			{
-				LookInput(value.Get<Vector2>());
+				LookInput(value.Get<Vector2>().normalized);
 			}
 		}
 

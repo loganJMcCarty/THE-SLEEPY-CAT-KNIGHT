@@ -112,7 +112,7 @@ namespace StarterAssets
         private const float _threshold = 0.01f;
 
         private bool _hasAnimator;
-
+        private float senitivity = 1;
         private bool IsCurrentDeviceMouse
         {
             get
@@ -143,6 +143,7 @@ namespace StarterAssets
             _animator = GetComponentInChildren<Animator>();
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+            senitivity = PreferencesManager.GetSenitivity();
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
 #else
@@ -164,6 +165,10 @@ namespace StarterAssets
             GroundedCheck();
             Move();
             Attack();
+            if (senitivity != PreferencesManager.GetSenitivity())
+            {
+                senitivity = PreferencesManager.GetSenitivity();
+            }
         }
 
         private void LateUpdate()
@@ -203,8 +208,8 @@ namespace StarterAssets
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * senitivity;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * senitivity;
             }
 
             // clamp our rotations so our values are limited 360 degrees
