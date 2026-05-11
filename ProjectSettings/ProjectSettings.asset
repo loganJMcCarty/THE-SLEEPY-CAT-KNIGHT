@@ -547,6 +547,9 @@ PlayerSettings:
   - m_BuildTarget: Android
     m_StaticBatching: 1
     m_DynamicBatching: 0
+  - m_BuildTarget: Windows Store Apps
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -873,13 +876,28 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: THESLEEPYCATKNIGHT
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: GCTC
+  metroCertificateIssuer: GCTC
+  metroCertificateNotAfter: 80e1c14e7b00de01
   metroApplicationDescription: THE SLEEPY CAT KNIGHT
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/prefabs/materals/grathics/Xbox 1.png
+    65661: Assets/prefabs/materals/grathics/Xbox 2.png
+    65686: Assets/prefabs/materals/grathics/Xbox 3.png
+    65736: Assets/prefabs/materals/grathics/Xbox 4.png
+    65936: Assets/prefabs/materals/grathics/Xbox 5.png
+    131272: Assets/prefabs/materals/grathics/GCTC Logo_RGB_Stacked-2 (1).png
+    2031640: Assets/prefabs/materals/grathics/24.png
+    2031716: Assets/prefabs/materals/grathics/44.png
+    2031816: Assets/prefabs/materals/grathics/88.png
+    2097252: Assets/prefabs/materals/grathics/71.png
+    2097352: Assets/prefabs/materals/grathics/142.png
+    2162788: Assets/prefabs/materals/grathics/150.png
+    2162888: Assets/prefabs/materals/grathics/300.png
+    2293860: Assets/prefabs/materals/grathics/310x150.png
+    2293960: Assets/prefabs/materals/grathics/620x300.png
   metroTileShortName: THE SLEEPY CAT KNIGHT
   metroTileShowName: 0
   metroMediumTileShowName: 0
