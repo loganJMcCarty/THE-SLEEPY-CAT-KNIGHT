@@ -1,4 +1,4 @@
-﻿ using UnityEngine;
+﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -138,7 +138,7 @@ namespace StarterAssets
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
+
             //_hasAnimator = TryGetComponent(out _animator);
             _animator = GetComponentInChildren<Animator>();
             _controller = GetComponent<CharacterController>();
@@ -207,9 +207,17 @@ namespace StarterAssets
             {
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
-
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * senitivity;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * senitivity;
+                if (Gamepad.current != null)
+                {
+                    _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * senitivity * 300;
+                    _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * senitivity * 300;
+                }
+                else
+                {
+                    _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * senitivity;
+                    _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * senitivity;
+                }
+                
             }
 
             // clamp our rotations so our values are limited 360 degrees
@@ -413,7 +421,7 @@ namespace StarterAssets
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
                 var index = Random.Range(0, AttackAudioClips.Length);
-                sfx.PlayOneShot(AttackAudioClips[index],AttackAudioVolume);
+                sfx.PlayOneShot(AttackAudioClips[index], AttackAudioVolume);
             }
         }
     }
